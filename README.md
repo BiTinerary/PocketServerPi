@@ -3,7 +3,7 @@ A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More
 
 <img src="https://s16.postimg.org/yhsbsdlj9/IMG_1838.jpg">
 
-**Table of Contents**<br>
+##**Table of Contents**<br>
 - [Build Materials](#build-materials)
 - [Installation](#installation)
 - [Tutorials](#tutorials)
