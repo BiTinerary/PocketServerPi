@@ -22,7 +22,7 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 
 ### Proof of Concept
 <b>SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero<a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a></b><br>
-<img src='https://github.com/BiTinerary/PocketServerPi/blob/master/SSHoverHTMLviaButterfly.gif'><br>
+<img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sshoverhtmlviabutterflyresize.gif'><br>
 
 Connected to a Samba server through <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</> using Android Lollipop 5.0.1
 <img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sambaserverresize.gif'>
