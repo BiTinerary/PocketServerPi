@@ -32,7 +32,7 @@ SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</
 <p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sshoverhttpviabutterfly.gif'>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sambaserverresize.gif"></p>
 
 ## Use case:
-~ A $30 version of this: https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1<br>
+~ A $30 version of this:<br> https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1<br>
 ~ Consistant, Portable access to a Linux box or python terminal.<br>
 ~ Linux box that can be used as a `riskless` scratchpad.<br>
 ~ Painless Samba Share for file sharing work **and** home<br>
