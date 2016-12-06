@@ -18,7 +18,7 @@ If you're buying a NanoPi Neo Air, then this probably isn't your first rodeo. Us
 * <a href='http://www.taydaelectronics.com/bte13-007-cp2102-serial-converter-usb-2-0-to-ttl-uart-ftdi.html'>USB to UART Adapter</a>: $1.99<br>
 I ordered 4-5 items in addition to 2 of these from <a href='http://www.taydaelectronics.com'>Tayda</a> and S&H was only $1.26.
 * <a href='https://www.sparkfun.com/pages/RF_Conn_Guide'>U.FL (aka IPX) Antenna</a>: Cheap<br>
-Again, something I took off an OrangePi that didn't need the WiFi Antenna it came with anymore. It's worth mentioning that the Neo Air doesn't include any kind of external **or** internal antenna. You **will** need one of these if you want WiFi.
+This was something I had on hand, from a previous OrangePi purchase, that wasn't utilizing Wifi. It's worth mentioning that the Neo Air **doesn't** include **any kind** of external **or** internal antenna. You **will** need one of these if you want WiFi.
 
 ## Installation
 At the end of the day I prefer Armbian kernel and default setup. However, I reluctantly chose FriendlyArm's kernel since only their binaries and drivers support the 'Access Point' feature that plays a significant role in this project. I did try copy/pasting FriendlyArms binaries and other related files to the corresponding locations, outlined in FriendlyArm's `turn-wifi-into-apmod` binary, on an Armbian kernel but to no avail. Furthermore, Armbian forums mentioned multiple times that their kernel/drivers don't support an Access Point and "Nothing will ever improve."
