@@ -10,7 +10,7 @@ A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More
 - [Tutorials](#tutorials)
   - [Wifi](#wifi)
   - [Basic Tools](#basic-cli-tools)
-  - [Auto Switch Between AP Mode and Wifi Client](#auto-switch-between-ap-mode-and-client)
+  - [Auto Swap WiFi AP/Client](#auto-switch-between-ap-mode-and-client)
   - [Bluetooth](#bluetooth)
 - [Proof Of Concept and Examples](#proof-of-concept-and-examples)
 
