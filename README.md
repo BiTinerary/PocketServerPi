@@ -10,7 +10,7 @@ A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More
 - [Tutorials](#tutorials)
   - [Wifi](#wifi)
   - [Basic Tools](#basic-cli-tools)
-  - [Auto Swap WiFi AP/Client](#auto-switch-between-ap-mode-and-client)
+  - [Auto Swap WiFi AP/Client](#auto-swap-wifi-ap/client)
   - [Bluetooth](#bluetooth)
 - [Proof Of Concept and Examples](#proof-of-concept-and-examples)
 
@@ -33,7 +33,7 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 
 ### Basic CLI Tools
 
-### Auto Switch Between AP Mode and Client
+### Auto Swap WiFi AP/Client
 
 ### Bluetooth
 - <a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'> This Gist </a>
