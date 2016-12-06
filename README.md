@@ -25,13 +25,13 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 <p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sshoverhttpviabutterfly.gif'>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sambaserverresize.gif"></p>
 
 ## Use case:
-~ A $30 version of this: https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1
-~ Consistant, Portable access to a Linux box or python terminal.
-~ Linux box that can be used as a `riskless` scratchpad.
-~ Painless Samba Share for file sharing work **and** home
-~ Minidlna server for Consoles, Medial Players, etc...
-~ `if static ip present; do wakeonlan`
-~ Captive portals
+~ A $30 version of this: https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1<br>
+~ Consistant, Portable access to a Linux box or python terminal.<br>
+~ Linux box that can be used as a `riskless` scratchpad.<br>
+~ Painless Samba Share for file sharing work **and** home<br>
+~ Minidlna server for Consoles, Medial Players, etc...<br>
+~ `if static ip present; do wakeonlan`<br>
+~ Captive portals<br>
 
 ## Todo
 * Create a basic, generalized image (personal passwords/credz removed) so that USB to UART adapter is not needed for setup and can be accessed directly via SSH, Butterfly, Putty etc...
