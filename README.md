@@ -41,6 +41,7 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 ### Cron Jobs
 
 ### Bluetooth
+At the moment FriendlyArm has zero info on their website, forums and wiki. However, I'll get an update with some info on 12.9.16. In the meantime, I've discovered that <a href='https://wiki.archlinux.org/index.php/Bluetooth_headset'>THIS</a> tutorial works perfectly for finding, pairing, trusting and auto connecting to bluetooth devices. I've yet to actually get audio over bluetooth however, something TODO.
 
 ## Proof of Concept and Examples
 SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
@@ -55,5 +56,5 @@ SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</
 ~ `if static ip present; do wakeonlan`<br>
 ~ Captive portals<br>
 
-## Todo
+## TODO
 * Create a basic, generalized image (personal passwords/credz removed) so that USB to UART adapter is not needed for setup and can be accessed directly via SSH, Butterfly, Putty etc...
