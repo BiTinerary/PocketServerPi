@@ -20,6 +20,10 @@ Again, something I took off an OrangePi that didn't need the WiFi Antenna it cam
 # Setup
 At the end of the day I prefer Armbian kernel and default setup. However, I reluctantly chose FriendlyArm's kernel since only their binaries and drivers support the 'Access Point' feature that plays a significant role in this project. I did try copy/pasting FriendlyArms binaries and other related files to the corresponding locations, outlined in FriendlyArm's `turn-wifi-into-apmod` binary, on an Armbian kernel but to no avail. Furthermore, Armbian forums mentioned multiple times that their kernel/drivers don't support an Access Point and "Nothing will ever improve."
 
+### Proof of Concept
+<b>SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero<a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a></b><br>
+<img src=''>
+<img src=''>
 
 ## Todo
 * Create a basic, generalized image (personal passwords/credz removed) so that USB to UART adapter is not needed for setup and can be accessed via SSH, Butterfly, Putty etc...
