@@ -21,10 +21,10 @@ Again, something I took off an OrangePi that didn't need the WiFi Antenna it cam
 At the end of the day I prefer Armbian kernel and default setup. However, I reluctantly chose FriendlyArm's kernel since only their binaries and drivers support the 'Access Point' feature that plays a significant role in this project. I did try copy/pasting FriendlyArms binaries and other related files to the corresponding locations, outlined in FriendlyArm's `turn-wifi-into-apmod` binary, on an Armbian kernel but to no avail. Furthermore, Armbian forums mentioned multiple times that their kernel/drivers don't support an Access Point and "Nothing will ever improve."
 
 ### Proof of Concept
-<a align="left"><b>SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero<a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a>Connected to a Samba server using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a> on Android Lollipop 5.0.1</b><br>
-<img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sshoverhtmlviabutterflyresize.gif'></a><br>
+<a align="left"><b>SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero<a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a></b><br>
+<img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sshoverhtmlviabutterflyresize.gif'></a>
 
-<a align="right">
+<a align="right">Connected to a Samba server using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a> on Android Lollipop 5.0.1<br>
 <img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sambaserverresize.gif'></a>
 
 ## Todo
