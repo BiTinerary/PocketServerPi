@@ -8,6 +8,7 @@ A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More
 - [Installation](#installation)
 - [Tutorials](#tutorials)
   - [Wifi](#wifi)
+- [Proof Of Concept and Examples](#proof-of-concept-and-examples)
 
 ## Build Materials
 * <a href='http://www.friendlyarm.com/index.php?route=product/product&product_id=151'>NanoPi Neo Air</a>: $17.99 + $8 Shipping<br>
