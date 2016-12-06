@@ -5,6 +5,9 @@ A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More
 
 **Table of Contents**<br>
 - [Build Materials](#build-materials)
+- [Installation](#installation)
+- [Tutorials](#tutorials)
+  - [Wifi and Hostapd.conf](#wifi-and-hostapd.conf)
 
 ## Build Materials
 * <a href='http://www.friendlyarm.com/index.php?route=product/product&product_id=151'>NanoPi Neo Air</a>: $17.99 + $8 Shipping<br>
@@ -19,7 +22,7 @@ I ordered 4-5 items in addition to 2 of these from <a href='http://www.taydaelec
 * <a href='https://www.sparkfun.com/pages/RF_Conn_Guide'>U.FL (aka IPX) Antenna</a>: Cheap<br>
 Again, something I took off an OrangePi that didn't need the WiFi Antenna it came with anymore. It's worth mentioning that the Neo Air doesn't include any kind of external **or** internal antenna. You **will** need one of these if you want WiFi.
 
-# Setup
+# Installation
 At the end of the day I prefer Armbian kernel and default setup. However, I reluctantly chose FriendlyArm's kernel since only their binaries and drivers support the 'Access Point' feature that plays a significant role in this project. I did try copy/pasting FriendlyArms binaries and other related files to the corresponding locations, outlined in FriendlyArm's `turn-wifi-into-apmod` binary, on an Armbian kernel but to no avail. Furthermore, Armbian forums mentioned multiple times that their kernel/drivers don't support an Access Point and "Nothing will ever improve."
 
 ## Proof of Concept
@@ -34,6 +37,8 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 ~ Minidlna server for Consoles, Medial Players, etc...<br>
 ~ `if static ip present; do wakeonlan`<br>
 ~ Captive portals<br>
+
+# wifi-and-hostapd.conf
 
 ## Todo
 * Create a basic, generalized image (personal passwords/credz removed) so that USB to UART adapter is not needed for setup and can be accessed directly via SSH, Butterfly, Putty etc...
