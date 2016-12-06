@@ -11,7 +11,7 @@ A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More
   - [Basic Tools](#basic-cli-tools)
   - [Auto Switch Between AP Mode and Wifi Client](#auto-switch-between-apmode-and-client)
     - [Python Script](#python-script)
-    - [Cron Jobs](#cronjobs)
+    - [Cron Jobs](#cron-jobs)
   - [Bluetooth](#bluetooth)
   -
 - [Proof Of Concept and Examples](#proof-of-concept-and-examples)
