@@ -3,7 +3,10 @@ A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More
 
 <img src="https://s16.postimg.org/yhsbsdlj9/IMG_1838.jpg">
 
-### Build Materials
+**Table of Contents**
+[Build Materials](#build-materials)
+
+## Build Materials
 * <a href='http://www.friendlyarm.com/index.php?route=product/product&product_id=151'>NanoPi Neo Air</a>: $17.99 + $8 Shipping<br>
 My total cost after tax, shipping, hardware and a clear acrylic case [recommended for only $3.00] was $28.98
 
