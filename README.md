@@ -2,7 +2,7 @@
 A backup copy of my NanoPi Neo Air setup that I felt was worth documenting.
 
 ### Over all
-More or less, my setup is (or can be) a portable proftpd, SSH, bluetooth media host, minidlna, Access Point **and** samba server, etc.. rolled into one, for $25.
+More or less, my setup produces a portable proftpd, SSH, bluetooth media, minidlna, Access Point **and** samba server, etc.. rolled into one, for $25.
 
 ### Build Materials
 * <a href='http://www.friendlyarm.com/index.php?route=product/product&product_id=151'>NanoPi Neo Air</a>: $17.99 + $8 Shipping<br>
