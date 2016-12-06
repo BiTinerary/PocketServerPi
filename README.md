@@ -9,10 +9,12 @@ More or less a backup copy of my NanoPi NeoAir setup that I felt was worth docum
 My total cost after tax, shipping, hardware and a clear acrylic case [recommended for only $3.00] was $28.98
 
 * <a href='https://www.amazon.com/gp/product/B01E0918J8/ref=oh_aui_detailpage_o02_s01?ie=UTF8&psc=1'>32gb UHS-I Lexar Micro SD Card</a>: <strike>$9.49</strike><br>
-If you're considering buying a NanoPi Neo Air, then this probably isn't your first rodeo. Use an SD card you have lying around.
+If you're buying a NanoPi Neo Air, then this probably isn't your first rodeo. Use an SD card you have lying around.
 
-* <a href='http://www.taydaelectronics.com/bte13-007-cp2102-serial-converter-usb-2-0-to-ttl-uart-ftdi.html'>USB to UART Adapter</a>: $1.99
-I bought two, since they're so inexpensive. Also, S&H on Tayda is totally reasonable. I ordered 4-5 items in addition and S&H was $1.26.
+* <a href='http://www.taydaelectronics.com/bte13-007-cp2102-serial-converter-usb-2-0-to-ttl-uart-ftdi.html'>USB to UART Adapter</a>: $1.99<br>
+I ordered 4-5 items in addition to 2 of these from <a href='http://www.taydaelectronics.com'>Tayda</a> and S&H was only $1.26.
+
+
 
 ## Todo
 * Create a basic, generalized image (personal passwords/credz removed) so that USB to UART adapter is not needed for setup and can be accessed via SSH, Butterfly, Putty etc...
