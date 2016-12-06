@@ -11,8 +11,6 @@ A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More
   - [Wifi](#wifi)
   - [Basic Tools](#basic-cli-tools)
   - [Auto Switch Between AP Mode and Wifi Client](#auto-switch-between-ap-mode-and-client)
-    - [Python Script](#python-script)
-    - [Cron Jobs](#cron-jobs)
   - [Bluetooth](#bluetooth)
 - [Proof Of Concept and Examples](#proof-of-concept-and-examples)
 
@@ -36,10 +34,6 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 ### Basic CLI Tools
 
 ### Auto Switch Between AP Mode and Client
-
-### Python Script
-
-### Cron Jobs
 
 ### Bluetooth
 - <a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'> This Gist </a>
