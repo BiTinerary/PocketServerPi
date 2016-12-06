@@ -1,4 +1,7 @@
+# Bluetooth
+
 At the moment FriendlyArm has zero info on their website, forums and wiki. However, I'll get an update from them with some info on 12.9.16. In the meantime, I've discovered that <a href='https://wiki.archlinux.org/index.php/Bluetooth_headset'>THIS</a> tutorial works perfectly for finding, pairing, trusting and auto connecting to bluetooth devices. I've yet to actually get audio over bluetooth however, something TODO. Likely an issue with PulseAudio vs Alsa.<br>
+
 `sudo apt-get install pulseaudio-alsa, pulseaudio-bluetooth, bluez, bluez-libs, bluez-utils, bluez-firmware -y`<br>
 `bluetoothctl`<br>
 `power on`<br>
