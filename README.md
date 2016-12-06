@@ -1,10 +1,7 @@
 # PocketServerPi
-A backup copy of my NanoPi Neo Air setup that I felt was worth documenting.
+A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More or less, my setup produces a portable proftpd, SSH, bluetooth media, minidlna, Access Point **and** samba server, etc.. rolled into one, for $25.
 
 <img src="https://s16.postimg.org/yhsbsdlj9/IMG_1838.jpg">
-
-### Over all
-More or less, my setup produces a portable proftpd, SSH, bluetooth media, minidlna, Access Point **and** samba server, etc.. rolled into one, for $25.
 
 ### Build Materials
 * <a href='http://www.friendlyarm.com/index.php?route=product/product&product_id=151'>NanoPi Neo Air</a>: $17.99 + $8 Shipping<br>
