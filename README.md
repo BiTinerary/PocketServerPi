@@ -32,6 +32,9 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 ### Wifi
 
 ### Basic CLI Tools
+A major caveat (or some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the `/etc/hostapd.conf` so that it will connect to your Wifi SSID using a supplied password. On one hand Armbian includes `nmtui` by default, making this essential step **too** easy, on the other hand, FriendlyArm could just include something as basic as a CLI text editor. So your stuck between blindly appending a file or following their round about instructions, just to get to the point where you can download more baseline utilities.<br>
+I typically start with: `sudo apt-get install nano, htop, wavemon, samba, minidlna, screen -y`<br>
+and then go on to edit the samba and minidlna configs in `/etc/`
 
 ### Auto Swap WiFi AP and Client
 
