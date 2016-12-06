@@ -33,8 +33,7 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the `/etc/hostapd.conf` so that you can get it online because it doesn't include a CLI text editor. You could just create/append the `hostapd` with your SSID credentials. <br>
 
 ### Basic CLI Tools
-
-Anyways, I typically start with: `sudo apt-get install nano, htop, wavemon, samba, minidlna, screen -y`<br>
+I typically start with: `sudo apt-get install nano, htop, wavemon, samba, minidlna, screen -y`<br>
 and then go on to edit the samba and minidlna configs in `/etc/`
 
 ### Auto Swap WiFi AP and Client
