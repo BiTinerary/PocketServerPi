@@ -8,6 +8,9 @@ A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More
 - [Installation](#installation)
 - [Tutorials](#tutorials)
   - [Wifi](#wifi)
+  - [Basic Tools](#basic-cli-tools)
+  - [Bluetooth](#bluetooth)
+  -
 - [Proof Of Concept and Examples](#proof-of-concept-and-examples)
 
 ## Build Materials
@@ -26,6 +29,10 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 ## Tutorials
 
 ### Wifi
+
+### Basic CLI Tools
+
+### Bluetooth
 
 ## Proof of Concept and Examples
 SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
