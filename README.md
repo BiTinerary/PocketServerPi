@@ -61,8 +61,8 @@ At the moment FriendlyArm has zero info on their website, forums and wiki. Howev
 `power no`<br>
 `scan on`<br>
 
-**`[CHG] Device 00:00:00:77:44:AA Connected: yes<br>
-Authorize service 0000990R-0000-9000-9000-00000Q0M00GN: (yes/no)`**<br>
+**`[CHG] Device 00:00:00:77:44:AA Connected: yes`**<br>
+**`Authorize service 0000990R-0000-9000-9000-00000Q0M00GN: (yes/no)`**<br>
 
 `scan off`<br>
 `exit`<br>
