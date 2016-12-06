@@ -42,7 +42,7 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 ### Cron Jobs
 
 ### Bluetooth
-<a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'> This Gist </a>
+- <a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'> This Gist </a>
 
 ## Proof of Concept and Examples
 SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
