@@ -59,7 +59,7 @@ At the moment FriendlyArm has zero info on their website, forums and wiki. Howev
 
 `connect 00:00:00:77:44:AA`
 
-**`Failed to connect: org.bluez.Error.Failed`** : This is when I thought the yakshaving would commence, but I just...
+**`Failed to connect: org.bluez.Error.Failed`** : This is when I thought the yakshaving would commence, but I just...<br>
 `power no`
 `scan on`
 
