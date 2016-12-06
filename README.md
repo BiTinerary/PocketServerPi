@@ -25,15 +25,16 @@ I ordered 4-5 items in addition to 2 of these from <a href='http://www.taydaelec
 This was something I had on hand, from a previous OrangePi purchase, that wasn't utilizing Wifi. It's worth mentioning that the Neo Air **doesn't** include **any kind** of external **or** internal antenna. You **will** need one of these if you want WiFi.
 
 ## Installation
-At the end of the day I prefer Armbian kernel and default setup. However, I reluctantly chose FriendlyArm's kernel since only their binaries and drivers support the 'Access Point' feature that plays a significant role in this project. I did try copy/pasting FriendlyArms binaries and other related files to the corresponding locations, outlined in FriendlyArm's `turn-wifi-into-apmod` binary, on an Armbian kernel but to no avail. Furthermore, Armbian forums mentioned multiple times that their kernel/drivers don't support an Access Point and "Nothing will ever improve."
+At the end of the day I prefer Armbian kernel and default setup. However, I reluctantly chose FriendlyArm's kernel since only their binaries and drivers support the 'Access Point' feature that plays a significant role in this project. Furthermore, Armbian forums mentioned multiple times that their kernel/drivers don't support an Access Point and "Nothing will ever improve."
 
 ## Tutorials
 
 ### Wifi
+A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the `/etc/hostapd.conf` so that you can get it online because it doesn't include a CLI text editor. You could just create/append the `hostapd` with your SSID credentials. <br>
 
 ### Basic CLI Tools
-A major caveat (or some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the `/etc/hostapd.conf` so that it will connect to your Wifi SSID using a supplied password. On one hand Armbian includes `nmtui` by default, making this essential step **too** easy, on the other hand, FriendlyArm could just include something as basic as a CLI text editor. So your stuck between blindly appending a file or following their round about instructions, just to get to the point where you can download more baseline utilities.<br>
-I typically start with: `sudo apt-get install nano, htop, wavemon, samba, minidlna, screen -y`<br>
+
+Anyways, I typically start with: `sudo apt-get install nano, htop, wavemon, samba, minidlna, screen -y`<br>
 and then go on to edit the samba and minidlna configs in `/etc/`
 
 ### Auto Swap WiFi AP and Client
