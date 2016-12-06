@@ -41,7 +41,37 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 ### Cron Jobs
 
 ### Bluetooth
-At the moment FriendlyArm has zero info on their website, forums and wiki. However, I'll get an update from them with some info on 12.9.16. In the meantime, I've discovered that <a href='https://wiki.archlinux.org/index.php/Bluetooth_headset'>THIS</a> tutorial works perfectly for finding, pairing, trusting and auto connecting to bluetooth devices. I've yet to actually get audio over bluetooth however, something TODO.
+At the moment FriendlyArm has zero info on their website, forums and wiki. However, I'll get an update from them with some info on 12.9.16. In the meantime, I've discovered that <a href='https://wiki.archlinux.org/index.php/Bluetooth_headset'>THIS</a> tutorial works perfectly for finding, pairing, trusting and auto connecting to bluetooth devices. I've yet to actually get audio over bluetooth however, something TODO. Likely an issue with PulseAudio vs Alsa.
+`sudo apt-get install pulseaudio-alsa, pulseaudio-bluetooth, bluez, bluez-libs, bluez-utils, bluez-firmware -y`
+`bluetoothctl`
+`power on`
+`agent on`
+`default-agent`
+`scan on`
+
+**`[NEW] Device 00:00:00:77:44:AA Aduro SBN40`**
+
+`pair 00:00:00:77:44:AA`
+
+**`[CHG] Device 00:00:00:77:44:AA Paired: yes`**
+**`Pairing successful `**
+**`[CHG] Device 00:00:00:77:44:AA Connected: no`**
+
+`connect 00:00:00:77:44:AA`
+
+**`Failed to connect: org.bluez.Error.Failed`** : This is when I thought the yakshaving would commence, but I just continued with...
+`power no`
+`scan on`
+
+**`[CHG] Device 00:00:00:77:44:AA Connected: yes
+Authorize service 0000990R-0000-9000-9000-00000Q0M00GN: (yes/no)`**
+
+`scan off`
+`exit`
+`bluetoothctl`
+`trust 00:00:00:77:44:AA`
+`nano /etc/pulse/defaul.pa` : Add following to end of file. (if `default.pa` doesn't exist, then reboot device)
+`load-module module-switch-on-connect`
 
 ## Proof of Concept and Examples
 SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
