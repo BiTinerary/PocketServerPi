@@ -1,4 +1,4 @@
-# PocketServerPi
+# PocketServerPi --build in progress--
 A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More or less, my setup produces a portable proftpd, SSH, bluetooth media, minidlna, Access Point **and** samba server, etc.. rolled into one, for $30.
 
 <img src='https://s18.postimg.org/4r4brjkd5/nano_Pi_OTG2.jpg'>
@@ -33,7 +33,7 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the `/etc/hostapd.conf` so that you can get it online because it doesn't include a CLI text editor. You could just create/append the `hostapd` with your SSID credentials. <br>
 
 ### Basic CLI Tools
-I typically start with: `sudo apt-get install nano, htop, wavemon, samba, minidlna, screen -y`<br> and then go on to edit configs.
+I typically start with: `sudo apt-get install nano, htop, wavemon, samba, minidlna, screen -y` and then go on to edit configs.
 
 ### Auto Swap WiFi AP and Client
 Setup a cronjob in `crontab -e` to run the py.py script on startup or reboot. It will always try to connect as client, using any/all credentials supplied in `hostapd` config. If after 3 failed attempts, over 30 seconds, the device fails to ping a specified remote server (in this case Google) then the device will run FriendlyArm's binary in order to turn on Access Point mode. From there, you can connect via phone, browser, etc... and tinker. If you want it to turn back into a client and connect to home/work/etc... SSID, you will need to do so manually by running `turn-wifi-into-apmode no`
