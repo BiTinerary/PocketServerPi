@@ -1,4 +1,4 @@
-# PocketServerPi --build in progress--
+# PocketServerPi -- in progress --
 A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More or less, my setup produces a portable proftpd, SSH, bluetooth media, minidlna, Access Point **and** samba server, etc.. rolled into one, for $30.
 
 <img src='https://s18.postimg.org/4r4brjkd5/nano_Pi_OTG2.jpg'>
