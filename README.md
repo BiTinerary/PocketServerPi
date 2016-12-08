@@ -38,7 +38,9 @@ I tinkered around with the 4GB image for a couple hours/days and I never was abl
 
 `flash_eMMC.sh -d /mnt/sdcard/Ubuntu-Core-qte/`
 
-In case you were wondering, installing packages, editing files (with exception to some locations), etc... will **not** be carried over after you flash to the NAND.
+In case you were wondering, installing packages, editing files (with exception to some locations), etc... will **not** be carried over after you flash to the NAND. Also, upon a clean boot anytime you use `sudo` command you'll receive the error `sudo: unable to resolve host FriendlyARM`. To fix this, run:<br>
+
+`echo $(hostname -I | cut -d\ -f1) $(hostname) | sudo tee -a /etc/hosts`
 
 ## Tutorials
 
