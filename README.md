@@ -52,6 +52,8 @@ Setup a cronjob in `crontab -e` to run the `cronLaunch.sh` (which in turn fires 
 
 ### Bluetooth
 - <a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'> This Gist </a>
+or
+- This tutorial that is confirmed to work: https://wiki.archlinux.org/index.php/Bluetooth_headset
 
 ### GPIO
 They have zero public documentation (in english) for utilizing their GPIO at the moment. They said they will have an update in 2 weeks (from 12.8.16), so for the time being I plan on tinkering with sysfs and other wrappers, to see what is compatible.<br>
