@@ -27,10 +27,16 @@ This was something I had on hand, from a previous OrangePi purchase, that wasn't
 ## Installation
 At the end of the day I prefer Armbian kernel and default setup. However, I reluctantly chose FriendlyArm's kernel since only their binaries and drivers support the 'Access Point' feature that plays a significant role in this project. Furthermore, Armbian forums mentioned multiple times that their kernel/drivers don't support an Access Point and "Nothing will ever improve."
 
+Anyways, you know the drill. Here's FriendlyArm's <a href='https://www.mediafire.com/folder/sr5d0qpz774cs/NanoPi-NEO_Air'>download link</a>. Write to a MicroSD card using <a href='https://sourceforge.net/projects/win32diskimager/files/Archive/'>Win32 Disk Imager</a> Put MicroSD into device, wait for LEDs to blink.
+
+I tinkered around with the 4GB image for a couple hours/days and I never was able to get the WiFi working on that image. By default, the `/etc/wpa_supplicant/wpa_supplicant.conf` doesn't exist on the 4GB version, also they mention specifically (not explicitly) to use the 8GB 'eFlasher' version to set up WiFi. So.... use the 8GB.
+
+Write w/e image you go with using this command: `flash_eMMC.sh -d /mnt/sdcard/Ubuntu-Core-qte/`
+
 ## Tutorials
 
 ### Wifi
-A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the `/etc/hostapd.conf` so that you can get it online because it doesn't include a CLI text editor. You could just create/append the `hostapd` with your SSID credentials. <br>
+A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the ` etc/wpa_supplicant/wpa_supplicant.conf` so that you can get it online because it doesn't include a CLI text editor. You could just create/append the `wpa_supplicant.conf` with your SSID credentials. <br>
 
 ### Basic CLI Tools
 I typically start with: `sudo apt-get install nano, htop, wavemon, samba, minidlna, screen -y` and then go on to edit configs.
