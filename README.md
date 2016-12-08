@@ -65,8 +65,8 @@ SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</
 ## Use case:
 ~ A $30 version of this:<br> https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1<br>
 ~ Consistant, Portable access to a Linux box or python terminal.<br>
-~ Linux box that can be used as a `riskless` scratchpad.<br>
-~ Painless Samba Share for file sharing work **and** home<br>
+~ Linux box that can be used as a disposable scratchpad.<br>
+~ Painless and local (much safer) Samba Share for file sharing between work **and** home without ever touching a button<br>
 ~ Minidlna server for Consoles, Medial Players, etc...<br>
 ~ `if static ip present; do wakeonlan`<br>
 ~ Captive portals<br>
