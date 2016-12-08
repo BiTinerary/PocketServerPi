@@ -47,7 +47,6 @@ In case you were wondering, installing packages, editing files (with exception t
 ### Wifi
 A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the ` etc/wpa_supplicant/wpa_supplicant.conf` so that you can get it online. You could just avoid that collosal work around and append the `wpa_supplicant.conf` with the proper setup, or use the CLI editor `vi` that it comes with. Here's a one liner to append a the file with the goods, just make sure to replace the SSID and PASSWORD strings for your own credentials.<br>
 
-`touch /etc/wpa_supplicant/wpa_supplicant.conf`<br>
 `echo -e 'ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\nupdate_config=1\nnetwork={\n\t ssid="YOUR-WIFI-ESSID"\n\t psk="YOUR-WIFI-PASSWORD"\n}' >> /etc/wpa_supplicant/wpa_supplicant.conf`
 
 ### Basic CLI Tools
