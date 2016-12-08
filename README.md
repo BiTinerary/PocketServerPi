@@ -41,6 +41,7 @@ I tinkered around with the 4GB image for a couple hours/days and I never was abl
 In case you were wondering, installing packages, editing files (with exception to some locations), etc... will **not** be carried over after you flash to the NAND. Also, upon a clean boot anytime you use `sudo` command you'll receive the error `sudo: unable to resolve host FriendlyARM`. To fix this, run:<br>
 
 `echo $(hostname -I | cut -d\ -f1) $(hostname) | sudo tee -a /etc/hosts`
+(credit to Mr. Anderson's answer that didn't get enough credit, <a href='http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none'>here</a>.)
 
 ## Tutorials
 
