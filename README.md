@@ -36,7 +36,11 @@ Write w/e image you go with using this command: `flash_eMMC.sh -d /mnt/sdcard/Ub
 ## Tutorials
 
 ### Wifi
-A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the ` etc/wpa_supplicant/wpa_supplicant.conf` so that you can get it online because it doesn't include a CLI text editor. You could just create/append the `wpa_supplicant.conf` with your SSID credentials. <br>
+A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the ` etc/wpa_supplicant/wpa_supplicant.conf` so that you can get it online because it doesn't include a CLI text editor. You could just avoid that collosol work around and create/append the `wpa_supplicant.conf` with your SSID credentials. Here's how you would do that.<br>
+
+`touch /etc/wpa_supplicant/wpa_supplicant.conf`
+`echo -e 'ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\nupdate_config=1\nnetwork={\n\t ssid="<b>YOUR-WIFI-ESSID</b>"\n\t psk="<b>YOUR-WIFI-PASSWORD</b>"\n}' >> /etc/wpa_supplicant/wpa_supplicant.conf`
+
 
 ### Basic CLI Tools
 I typically start with: `sudo apt-get install nano, htop, wavemon, samba, minidlna, screen -y` and then go on to edit configs.
