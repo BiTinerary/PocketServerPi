@@ -51,7 +51,7 @@ I typically start with: `sudo apt-get install nano htop wavemon samba minidlna s
 Setup a cronjob in `crontab -e` to run the `cronLaunch.sh` (which in turn fires off the python `switchAPMode.py`) script on startup or reboot. It will always try to connect as client, using any/all credentials supplied in `wpa_supplicant` config. If after 3 failed attempts, over 30 seconds, the device fails to ping a specified remote server (in this case Google) then the device will run FriendlyArm's binary in order to turn on Access Point mode. From there, you can connect via phone, browser, etc... If you want it to turn back into a client and connect to a home or work network SSID, you will need to do so by manually running `turn-wifi-into-apmode no`
 
 ### Bluetooth
-- <a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'> This Gist </a>
+- <a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'>This Gist</a><br>
 or
 - This tutorial that is confirmed to work: https://wiki.archlinux.org/index.php/Bluetooth_headset
 
