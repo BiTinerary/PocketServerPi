@@ -40,8 +40,7 @@ I tinkered around with the 4GB image for a couple hours/days and I never was abl
 
 In case you were wondering, installing packages, editing files (with exception to some locations), etc... will **not** be carried over after you flash to the NAND. Also, upon a clean boot anytime you use `sudo` command you'll receive the error `sudo: unable to resolve host FriendlyARM`. To fix this, run:<br>
 
-`echo $(hostname -I | cut -d\ -f1) $(hostname) | sudo tee -a /etc/hosts`
-(credit to Mr. Anderson's answer that didn't get enough credit, <a href='http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none'>here</a>.)
+`echo $(hostname -I | cut -d\ -f1) $(hostname) | sudo tee -a /etc/hosts`*
 
 ## Tutorials
 
@@ -81,3 +80,5 @@ SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</
 ## TODO
 * Create a basic, generalized image (personal passwords/credz removed) so that USB to UART adapter is not needed for setup and can be accessed directly via SSH, Butterfly, Putty etc...
 * Boot as HID device, extending the "swiss army knife" capabilities to Rubber Ducky territory.
+
+*(credit to Mr. Anderson's answer that didn't get enough credit, <a href='http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none'>here</a>.)
