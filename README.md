@@ -30,6 +30,10 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 
 Anyways, you know the drill. Here's FriendlyArm's link to <a href='https://www.mediafire.com/folder/sr5d0qpz774cs/NanoPi-NEO_Air'>download</a> images. Write to a MicroSD card using <a href='https://sourceforge.net/projects/win32diskimager/files/Archive/'>Win32 Disk Imager</a>. Put MicroSD into device, wait for LEDs to blink. From here you will need to make a serial connection between your computer and the Neo Air in order to communicate with it. If you are unfamiliar with that process, check out this <a href='https://gist.github.com/BiTinerary/5d759c5715c2432e9830842171f97c4c'>Gist</a>.
 
+FriendlyArm's default credentials are as follows<br>
+user:`root` password:`fa`<br>
+user:`fa` password:`fa` (**not** a sudoer)<br>
+
 I tinkered around with the 4GB image for a couple hours/days and I never was able to get the WiFi working on that image. By default, the `/etc/wpa_supplicant/wpa_supplicant.conf` doesn't exist on the 4GB version, also they mention specifically (not explicitly) to use the 8GB 'eFlasher' version to set up WiFi. With that in mind you can write the filesystem/image to the onboard NAND using:<br>
 
 `flash_eMMC.sh -d /mnt/sdcard/Ubuntu-Core-qte/`
