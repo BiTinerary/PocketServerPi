@@ -28,9 +28,9 @@ This was something I had on hand, from a previous OrangePi purchase, that wasn't
 ## Installation
 At the end of the day I prefer Armbian kernel and default setup. However, I reluctantly chose FriendlyArm's kernel since only their binaries and drivers support the 'Access Point' feature that plays a significant role in this project. Furthermore, Armbian forums mentioned multiple times that their kernel/drivers don't support an Access Point and "Nothing will ever improve."
 
-Anyways, you know the drill. Here's FriendlyArm's <a href='https://www.mediafire.com/folder/sr5d0qpz774cs/NanoPi-NEO_Air'>download link</a>. Write to a MicroSD card using <a href='https://sourceforge.net/projects/win32diskimager/files/Archive/'>Win32 Disk Imager</a> Put MicroSD into device, wait for LEDs to blink.
+Anyways, you know the drill. Here's FriendlyArm's link to<a href='https://www.mediafire.com/folder/sr5d0qpz774cs/NanoPi-NEO_Air'>download</a> images. Write to a MicroSD card using <a href='https://sourceforge.net/projects/win32diskimager/files/Archive/'>Win32 Disk Imager</a>. Put MicroSD into device, wait for LEDs to blink. From here you will need to make a serial connection between your computer and the Neo Air in order to communicate with it. If you are unfamiliar with that process, check out this <a href='https://gist.github.com/BiTinerary/5d759c5715c2432e9830842171f97c4c'>Gist</a>.
 
-I tinkered around with the 4GB image for a couple hours/days and I never was able to get the WiFi working on that image. By default, the `/etc/wpa_supplicant/wpa_supplicant.conf` doesn't exist on the 4GB version, also they mention specifically (not explicitly) to use the 8GB 'eFlasher' version to set up WiFi. With that in mind you can write the filesystem/image to the onboard Nand using:<br>
+I tinkered around with the 4GB image for a couple hours/days and I never was able to get the WiFi working on that image. By default, the `/etc/wpa_supplicant/wpa_supplicant.conf` doesn't exist on the 4GB version, also they mention specifically (not explicitly) to use the 8GB 'eFlasher' version to set up WiFi. With that in mind you can write the filesystem/image to the onboard NAND using:<br>
 
 `flash_eMMC.sh -d /mnt/sdcard/Ubuntu-Core-qte/`
 
@@ -53,6 +53,7 @@ Setup a cronjob in `crontab -e` to run the `cronLaunch.sh` (which in turn fires 
 
 ### GPIO
 They have zero public documentation (in english) for utilizing their GPIO at the moment. They said they will have an update in 2 weeks (from 12.8.16), so for the time being I plan on tinkering with sysfs and other wrappers, to see what is compatible.<br>
+
 ## Proof of Concept and Examples
 SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
 <p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sshoverhttpviabutterfly.gif'>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sambaserverresize.gif"></p>
