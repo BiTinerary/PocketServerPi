@@ -82,4 +82,6 @@ SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</
 * Boot as HID device, extending the "swiss army knife" capabilities to Rubber Ducky territory.
 
 ## Credit
-Mr. Anderson's answer that didn't get enough credit, <a href='http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none'>here</a>.
+- Mr. Anderson's answer that didn't get enough credit, <a href='http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none'>here</a>.
+- This bluetooth tutorial: https://wiki.archlinux.org/index.php/Bluetooth_headset
+
