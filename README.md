@@ -73,3 +73,4 @@ SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</
 
 ## TODO
 * Create a basic, generalized image (personal passwords/credz removed) so that USB to UART adapter is not needed for setup and can be accessed directly via SSH, Butterfly, Putty etc...
+* Boot as HID device, extending the "swiss army knife" capabilities to Rubber Ducky territory.
