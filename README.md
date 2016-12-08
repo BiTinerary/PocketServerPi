@@ -30,9 +30,9 @@ At the end of the day I prefer Armbian kernel and default setup. However, I relu
 
 Anyways, you know the drill. Here's FriendlyArm's <a href='https://www.mediafire.com/folder/sr5d0qpz774cs/NanoPi-NEO_Air'>download link</a>. Write to a MicroSD card using <a href='https://sourceforge.net/projects/win32diskimager/files/Archive/'>Win32 Disk Imager</a> Put MicroSD into device, wait for LEDs to blink.
 
-I tinkered around with the 4GB image for a couple hours/days and I never was able to get the WiFi working on that image. By default, the `/etc/wpa_supplicant/wpa_supplicant.conf` doesn't exist on the 4GB version, also they mention specifically (not explicitly) to use the 8GB 'eFlasher' version to set up WiFi.
+I tinkered around with the 4GB image for a couple hours/days and I never was able to get the WiFi working on that image. By default, the `/etc/wpa_supplicant/wpa_supplicant.conf` doesn't exist on the 4GB version, also they mention specifically (not explicitly) to use the 8GB 'eFlasher' version to set up WiFi. With that in mind you can write the filesystem/image to the onboard Nand using:<br>
 
-Write w/e image you go with using this command: `flash_eMMC.sh -d /mnt/sdcard/Ubuntu-Core-qte/`
+`flash_eMMC.sh -d /mnt/sdcard/Ubuntu-Core-qte/`
 
 ## Tutorials
 
