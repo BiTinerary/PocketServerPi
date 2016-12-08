@@ -12,6 +12,7 @@ A backup copy of my NanoPi Neo Air setup that I felt was worth documenting. More
   - [Basic Tools](#basic-cli-tools)
   - [Auto Swap WiFi AP/Client](#auto-swap-wifi-ap-and-client)
   - [Bluetooth](#bluetooth)
+  - [GPIO](#gpio)
 - [Proof Of Concept and Examples](#proof-of-concept-and-examples)
 
 ## Build Materials
@@ -36,7 +37,7 @@ Write w/e image you go with using this command: `flash_eMMC.sh -d /mnt/sdcard/Ub
 ## Tutorials
 
 ### Wifi
-A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the ` etc/wpa_supplicant/wpa_supplicant.conf` so that you can get it online because it doesn't include a CLI text editor. You could just avoid that collosol work around and create/append the `wpa_supplicant.conf` with your SSID credentials. Here's how you would do that, just make sure to replace the SSID and PASSWORD strings for your own credentials.<br>
+A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the ` etc/wpa_supplicant/wpa_supplicant.conf` so that you can get it online because it doesn't include a CLI text editor. You could just avoid that collosal work around and append the `wpa_supplicant.conf` with your SSID credentials. Here's a one liner to do that, just make sure to replace the SSID and PASSWORD strings for your own credentials.<br>
 
 `touch /etc/wpa_supplicant/wpa_supplicant.conf`<br>
 `echo -e 'ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\nupdate_config=1\nnetwork={\n\t ssid="YOUR-WIFI-ESSID"\n\t psk="YOUR-WIFI-PASSWORD"\n}' >> /etc/wpa_supplicant/wpa_supplicant.conf`
@@ -50,6 +51,8 @@ Setup a cronjob in `crontab -e` to run the py.py script on startup or reboot. It
 ### Bluetooth
 - <a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'> This Gist </a>
 
+### GPIO
+They have zero public documentation (in english) for utilizing their GPIO at the moment. They said they will have an update in 2 weeks (from 12.8.16), so for the time being I plan on tinkering with sysfs and other wrappers, to see what is compatible.
 ## Proof of Concept and Examples
 SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
 <p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sshoverhttpviabutterfly.gif'>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sambaserverresize.gif"></p>
