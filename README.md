@@ -43,7 +43,7 @@ A major caveat (some might say benefit) to FriendlyArm is that it comes annoying
 `echo -e 'ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\nupdate_config=1\nnetwork={\n\t ssid="YOUR-WIFI-ESSID"\n\t psk="YOUR-WIFI-PASSWORD"\n}' >> /etc/wpa_supplicant/wpa_supplicant.conf`
 
 ### Basic CLI Tools
-I typically start with: `sudo apt-get install nano, htop, wavemon, samba, minidlna, screen -y` and then go on to edit configs.
+I typically start with: `sudo apt-get install nano htop wavemon samba minidlna screen -y` and then go on to edit configs.
 
 ### Auto Swap WiFi AP and Client
 Setup a cronjob in `crontab -e` to run the py.py script on startup or reboot. It will always try to connect as client, using any/all credentials supplied in `hostapd` config. If after 3 failed attempts, over 30 seconds, the device fails to ping a specified remote server (in this case Google) then the device will run FriendlyArm's binary in order to turn on Access Point mode. From there, you can connect via phone, browser, etc... and tinker. If you want it to turn back into a client and connect to home/work/etc... SSID, you will need to do so manually by running `turn-wifi-into-apmode no`
