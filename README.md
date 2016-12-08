@@ -34,6 +34,8 @@ I tinkered around with the 4GB image for a couple hours/days and I never was abl
 
 `flash_eMMC.sh -d /mnt/sdcard/Ubuntu-Core-qte/`
 
+In case you were wondering, installing packages, editing files (with exception to some locations), etc... will **not** be carried over after you flash to the NAND.
+
 ## Tutorials
 
 ### Wifi
