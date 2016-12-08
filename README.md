@@ -68,7 +68,7 @@ SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</
 ~ Linux box that can be used as a disposable scratchpad.<br>
 ~ Painless and local (much safer) Samba Share for file sharing between work **and** home without ever touching a button<br>
 ~ Minidlna server for Consoles, Medial Players, etc...<br>
-~ `if static ip present; do wakeonlan`<br>
+~ `if static ip present; do wakeonlan` ie: wireless, buttonless, IOT trigger<br>
 ~ Captive portals<br>
 
 ## TODO
