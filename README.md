@@ -37,7 +37,7 @@ I tinkered around with the 4GB image for a couple hours/days and I never was abl
 ## Tutorials
 
 ### Wifi
-A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the ` etc/wpa_supplicant/wpa_supplicant.conf` so that you can get it online because it doesn't include a CLI text editor. You could just avoid that collosal work around and append the `wpa_supplicant.conf` with your SSID credentials. Here's a one liner to do that, just make sure to replace the SSID and PASSWORD strings for your own credentials.<br>
+A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the ` etc/wpa_supplicant/wpa_supplicant.conf` so that you can get it online. You could just avoid that collosal work around and append the `wpa_supplicant.conf` with the SSID setup, or use `vi` CLI editor it comes with (even if it's rude to newbs). Here's a one liner to do that, just make sure to replace the SSID and PASSWORD strings for your own credentials.<br>
 
 `touch /etc/wpa_supplicant/wpa_supplicant.conf`<br>
 `echo -e 'ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\nupdate_config=1\nnetwork={\n\t ssid="YOUR-WIFI-ESSID"\n\t psk="YOUR-WIFI-PASSWORD"\n}' >> /etc/wpa_supplicant/wpa_supplicant.conf`
