@@ -45,15 +45,15 @@ In case you were wondering, installing packages, editing files (with exception t
 ## Tutorials
 
 ### Wifi
-A major caveat (some might say benefit) to FriendlyArm is that it comes annoyingly bare. To the point where they suggest mounting the MicroSD card to an Ubuntu system (I had to use a VirtualBox with shared USB) in order to manually edit the ` etc/wpa_supplicant/wpa_supplicant.conf` so that you can get it online. You could just avoid that collosal work around and append the `wpa_supplicant.conf` with the proper setup, or use the CLI editor `vi` that it comes with. Here's a one liner to append a the file with the goods, just make sure to replace the SSID and PASSWORD strings for your own credentials.<br>
+FriendlyArm suggests mounting the MicroSD card to an Ubuntu system (I had used a VirtualBox with shared USB) in order to manually edit the `/etc/wpa_supplicant/wpa_supplicant.conf` to get it to connect to an SSID. This is a crazy work around and can be done by just appending the `wpa_supplicant.conf` with the proper info. Or by using the CLI editor `vi` that it comes with. Here's a one liner to get you device to connect to your WiFi Network, just make sure to replace the SSID and PASSWORD strings for your own stuff.<br>
 
 `echo -e 'ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\nupdate_config=1\nnetwork={\n\t ssid="YOUR-WIFI-ESSID"\n\t psk="YOUR-WIFI-PASSWORD"\n}' >> /etc/wpa_supplicant/wpa_supplicant.conf`
 
 ### Basic CLI Tools
-I typically start with: `sudo apt-get install nano htop wavemon samba minidlna screen -y` and then go on to edit configs.
+I typically start with: `sudo apt-get install nano htop wavemon screen samba minidlna -y` and then go on to edit configs.
 
 ### Auto Swap WiFi AP and Client
-Setup a cronjob in `crontab -e` to run the `cronLaunch.sh` (which in turn fires off the python `switchAPMode.py`) script on startup or reboot. It will always try to connect as client, using any/all credentials supplied in `wpa_supplicant` config. If after 3 failed attempts, over 30 seconds, the device fails to ping a specified remote server (in this case Google) then the device will run FriendlyArm's binary in order to turn on Access Point mode. From there, you can connect via phone, browser, etc... If you want it to turn back into a client and connect to a home or work network SSID, you will need to do so by manually running `turn-wifi-into-apmode no`
+Setup a cronjob in `crontab -e` to run the `cronLaunch.sh` (which in turn fires off `switchAPMode.py`) script on startup. It will always try to connect as client, using any/all credentials supplied in `wpa_supplicant` config. If after 3 failed attempts, over 30 seconds, the device fails to ping a specified remote server (in this case Google) then the device will run FriendlyArm's binary in order to turn on Access Point mode. From there, you can connect via phone, browser, etc... If you want it to turn back into a client and connect to a home or work network SSID, you will need to do so by manually running `turn-wifi-into-apmode no`.
 
 ### Bluetooth
 - <a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'>This Gist</a><br>
@@ -61,7 +61,7 @@ or
 - This tutorial that is confirmed to work: https://wiki.archlinux.org/index.php/Bluetooth_headset
 
 ### GPIO
-They have zero public documentation (in english) for utilizing their GPIO at the moment. They said they will have an update in 2 weeks (from 12.8.16), so for the time being I plan on tinkering with sysfs and other wrappers, to see what is compatible.<br>
+They have zero to limited documentation for using GPIO at the moment. They said they will have an update in 2 weeks (from 12.8.16), so for the time being I plan on tinkering with sysfs and other wrappers, to see what is compatible.<br>
 
 ## Proof of Concept and Examples
 SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
