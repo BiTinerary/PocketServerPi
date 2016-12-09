@@ -83,7 +83,7 @@ SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</
 * Boot as HID device, extending the "swiss army knife" capabilities to Rubber Ducky territory.
 
 ## <u>Credit</u>
-###Tutorials confirmed to work, as instructed (limited to no yakshaving), on Nano Pi Neo Air running Friendly Arm Kernel 3.4.39-h3
+<u>Tutorials confirmed to work, as instructed (limited to no yakshaving), on Nano Pi Neo Air running Friendly Arm Kernel 3.4.39-h3</u>
 - Mr. Anderson's answer that didn't get enough credit, <a href='http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none'>here</a>.
 - This bluetooth tutorial: https://wiki.archlinux.org/index.php/Bluetooth_headset
 - Setup Samba: https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20(Command-line%20interface/Linux%20Terminal)%20-%20Uncomplicated,%20Simple%20and%20Brief%20Way!
