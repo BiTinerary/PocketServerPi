@@ -1,10 +1,7 @@
-#!/bin/python
-
 import os, time, socket
 
-onlineArray = []
-
 os.system('turn-wifi-into-apmode no')
+onlineArray = []
 time.sleep(5)
 
 def amIOnline():
@@ -19,13 +16,10 @@ def amIOnline():
 while True:
 	for x in range(3):
 		amIOnline()
-		print onlineArray
 
 	if onlineArray == ['False', 'False', 'False']:
 		os.system('turn-wifi-into-apmode yes')
 		break
-
 	elif onlineArray != ['False','False','False']:
 		pass
-
 	onlineArray = []
