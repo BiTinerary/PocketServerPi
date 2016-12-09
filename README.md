@@ -50,7 +50,9 @@ FriendlyArm suggests mounting the MicroSD card to an Ubuntu system (I had used a
 `echo -e 'ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\nupdate_config=1\nnetwork={\n\t ssid="YOUR-WIFI-ESSID"\n\t psk="YOUR-WIFI-PASSWORD"\n}' >> /etc/wpa_supplicant/wpa_supplicant.conf`
 
 ### Basic CLI Tools
-I typically start with: `sudo apt-get install nano htop wavemon screen samba minidlna -y` and then go on to edit configs.
+I typically start with: `sudo apt-get install nano htop wavemon screen samba minidlna -y` and then go on to edit configs.<br>
+  - <a href='https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20(Command-line%20interface/Linux%20Terminal)%20-%20Uncomplicated,%20Simple%20and%20Brief%20Way!'>Setup Samba</a> [*](#credit)
+  - <a href='https://help.ubuntu.com/community/MiniDLNA'>Setup minidlna</a>
 
 ### Auto Swap WiFi AP and Client
 Setup a cronjob in `crontab -e` to run the `cronLaunch.sh` (which in turn fires off `switchAPMode.py`) script on startup. It will always try to connect as client, using any/all credentials supplied in `wpa_supplicant` config. If after 3 failed attempts, over 30 seconds, the device fails to ping a specified remote server (in this case Google) then the device will run FriendlyArm's binary in order to turn on Access Point mode. From there, you can connect via phone, browser, etc... If you want it to turn back into a client and connect to a home or work network SSID, you will need to do so by manually running `turn-wifi-into-apmode no`.
@@ -83,4 +85,4 @@ SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</
 ## Credit
 - Mr. Anderson's answer that didn't get enough credit, <a href='http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none'>here</a>.
 - This bluetooth tutorial: https://wiki.archlinux.org/index.php/Bluetooth_headset
-
+- https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20(Command-line%20interface/Linux%20Terminal)%20-%20Uncomplicated,%20Simple%20and%20Brief%20Way!
