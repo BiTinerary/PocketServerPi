@@ -41,7 +41,7 @@ def howManyTimesDoBlinky(q): # takes input which will run blink LED func.
 
 while True: # Main loop
 	n = getParsedOrderInfo()
-	for times in range(2400): # 2400 because that's how many times .4 seconds fits, into 20 minutes. (.4 for total runtime of blinkyLED())
+	for times in range(300): # because that's how many times .4 seconds fits, into 2 minutes. (.4 for total runtime of blinkyLED())
 		howManyTimesDoBlinky(n) # blinky LED for each order that needs shipping. WITHOUT making an API call everytime within 10 minute span.
 		time.sleep(3)
-	time.sleep(1200) # sleep 20 minutes (Needs to be at least 15-20 minutes as to not exceed daily API call [5000] limit)
+	time.sleep(120) # sleep two minutes before next API Call for potential orders. (1 call per 2 minutes = ~720 calls/day of 5000 max)
