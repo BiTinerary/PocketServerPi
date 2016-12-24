@@ -8,7 +8,7 @@ time.sleep(30) # My auto client/AP mode script causes slight delay in internet c
 
 def geteBayUnshippedOrders():
         try:
-                api = Trading(config_file="ebay.yaml") # eBay API Credentials, Trading.
+                api = Trading(config_file="/home/stuxnet/blinkPerOrder/ebay.yaml") # eBay API Credentials, Trading.
                 response = api.execute('GetSellerTransactions', {}) # Make API call for Transactions (defaults to some date?)
                 theGoods = response.content # return eBay's xml response so other functions can use it as var.
                 return theGoods
