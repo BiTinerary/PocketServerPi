@@ -22,4 +22,4 @@
 # m h  dom mon dow   command
 @reboot sh /home/stuxnet/switchAPMode/cronLaunch.sh >/home/stuxnet/switchAPMode/Logs/cronlog 2>&1
 @reboot /usr/bin/python2.7 /usr/local/bin/butterfly.server.py --host="0.0.0.0" --port=57575 --unsecure
-@reboot /usr/bin/python2.7 /home/stuxnet/blinkPerShippingOrder/geteBayOrdersAndBlinky.py
+@reboot /usr/bin/python2.7 /home/stuxnet/blinkPerOrder/blinkPerOrder.py
