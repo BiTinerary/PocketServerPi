@@ -1,4 +1,4 @@
-from ebaysdk.trading import Connection as Trading
+tryfrom ebaysdk.trading import Connection as Trading
 from ebaysdk.exception import ConnectionError
 import bs4 as bs
 import time, os
@@ -43,7 +43,10 @@ def howManyTimesDoBlinky(q): # takes input which will run blink LED func.
                 print('Led Blink: %s' % i)
 
 while True: # Main loop
-        n = getParsedOrderInfo()
+        try:
+                n = getParsedOrderInfo()
+        except:
+                continue
         for times in range(36): # because that's how many times 3.4 seconds fits, into 2 minutes. (.4 for total runtime of blinkyLED()+ 3 sec wait in between)
                 if n == 0:# try to find orders and run blinky
                         print('Pretend sleep...')
