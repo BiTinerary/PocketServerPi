@@ -79,7 +79,7 @@ Run time on the portable Uline battery (2200mAh) seen in first pictures, was 4 h
 ~ Painless and local (much safer) Samba Share for file sharing between work **and** home without ever touching a button<br>
 ~ Minidlna server for Consoles, Medial Players, etc...<br>
 ~ `if static ip present; do wakeonlan` ie: wireless, buttonless, IOT trigger.<br>
-~ Captive portals<br>
+~ Captive portals and automated node/client pentesting.<br>
 
 ## TODO
 * Create a basic, generalized image (personal passwords/credz removed) so that USB to UART adapter is not needed for setup and can be accessed directly via SSH, Butterfly, Putty etc...
