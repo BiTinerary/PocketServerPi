@@ -18,7 +18,7 @@ def geteBayUnshippedOrders():
 
 def getParsedOrderInfo():
         xmlToParseFromEbay = str(geteBayUnshippedOrders()) # Stored xml as string, as different var.
-        soup = bs.BeautifulSoup(xmlToParseFromEbay, 'lxml') # Beautiful soup to parse out xml dictionarys.
+        soup = bs.BeautifulSoup(xmlToParseFromEbay, 'lxml') # Beautiful soup to parse out xml dictionaries.
         tArray = soup.transactionarray # get only the transaction data, amongst all other eBay responses.
         x = 0 # typcical counter
         for each in tArray: # for each entry in transaction array.
