@@ -1,4 +1,4 @@
-tryfrom ebaysdk.trading import Connection as Trading
+from ebaysdk.trading import Connection as Trading
 from ebaysdk.exception import ConnectionError
 import bs4 as bs
 import time, os
