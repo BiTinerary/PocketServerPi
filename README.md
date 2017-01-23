@@ -82,6 +82,8 @@ Run time on the portable Uline battery (2200mAh) seen in first pictures, was 4 h
 ~ Captive portals and automated node/client pentesting.<br>
 
 ## TODO
+* Wifi Mode automation and swap from Client to AP has proved to work reliably. Python scripts (switchAPMode/blinkPerOrder) should be moved, to /etc/network/if-down.d and if-up.d respectively.
+  * Python scripts should **not** have .py extension but `#!/bin/python` on line 0, also the crontab/Launch on startup can be destroyed.
 * Create a basic, generalized image (personal passwords/credz removed) so that USB to UART adapter is not needed for setup and can be accessed directly via SSH, Butterfly, Putty etc...
 * Boot as HID device, extending the "swiss army knife" capabilities to Rubber Ducky territory.
 
