@@ -5,6 +5,7 @@ A backup copy of my NanoPi Neo Air setup, running FriendlyArm, that I felt was w
 <img src="https://s16.postimg.org/yhsbsdlj9/IMG_1838.jpg">
 
 ##**Table of Contents**<br>
+- [Proof Of Concept and Examples](#proof-of-concept-and-examples)
 - [Build Materials](#build-materials)
 - [Installation](#installation)
 - [Tutorials](#tutorials)
@@ -13,7 +14,12 @@ A backup copy of my NanoPi Neo Air setup, running FriendlyArm, that I felt was w
   - [Auto Swap WiFi AP/Client](#auto-swap-wifi-ap-and-client)
   - [Bluetooth](#bluetooth)
   - [GPIO](#gpio)
-- [Proof Of Concept and Examples](#proof-of-concept-and-examples)
+
+## Proof of Concept and Examples
+SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
+<p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sshoverhttpviabutterfly.gif'>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sambaserverresize.gif"></p>
+
+Run time on the portable Uline battery (2200mAh) seen in first pictures, was 4 hours 19 minutes.
 
 ## Build Materials
 * <a href='http://www.friendlyarm.com/index.php?route=product/product&product_id=151'>NanoPi Neo Air</a>: $17.99 + $8 Shipping<br>
@@ -64,12 +70,6 @@ or
 
 ### GPIO
 They have zero to limited documentation for using GPIO at the moment. They said they will have an update in 2 weeks (from 12.8.16), so for the time being I plan on tinkering with sysfs and other wrappers, to see what is compatible.<br>
-
-## Proof of Concept and Examples
-SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
-<p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sshoverhttpviabutterfly.gif'>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sambaserverresize.gif"></p>
-
-Run time on the portable Uline battery (2200mAh) seen in first pictures, was 4 hours 19 minutes.
 
 ## Use case
 ~ A $30 version of this:<br> https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1<br>
