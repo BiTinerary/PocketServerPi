@@ -62,7 +62,6 @@ I typically start with: `sudo apt-get install nano htop wavemon screen samba min
   - <a href='https://help.ubuntu.com/community/MiniDLNA'>Setup minidlna</a>
 
 ### i2c Screen SSD1306
-<br>
 <img src='https://s12.postimg.org/lawg9srv1/IMG_9943.jpg'><br>
 <br>
 Much easier than I anticipated. Here's the module I downloaded/followed. Give this guy some credit!<br> <a href='https://github.com/rm-hull/luma.oled'>https://github.com/rm-hull/luma.oled</a><br>
