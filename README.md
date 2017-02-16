@@ -12,7 +12,7 @@ A backup copy of my NanoPi Neo Air setup, running FriendlyArm, that I felt was w
 - [Tutorials](#tutorials)
   - [Wifi](#wifi)
   - [Basic Tools](#basic-cli-tools)
-  - [i2C Screen](#i2c-Screen-SSD1306)
+  - [i2C Screen](#i2c-screen-ssd1306)
   - [Auto Swap WiFi AP/Client](#auto-swap-wifi-ap-and-client)
   - [Bluetooth](#bluetooth)
   - [GPIO](#gpio)
@@ -63,8 +63,9 @@ I typically start with: `sudo apt-get install nano htop wavemon screen samba min
   - <a href='https://help.ubuntu.com/community/MiniDLNA'>Setup minidlna</a>
 
 ### i2c Screen SSD1306
-Much easier than I anticipated. Here's the module I downloaded/followed. Give this guy some credit! <a href='https://github.com/rm-hull/luma.oled'>https://github.com/rm-hull/luma.oled</a><br>
-He has the full documentation, installation, example code here: <a href='https://luma-oled.readthedocs.io'>https://luma-oled.readthedocs.io</a> Note that for the NanoPi NeoAir, the example code works, you just have to <b>change ports</b> `port=1` to `port=0`<br>
+Much easier than I anticipated. Here's the module I downloaded/followed. Give this guy some credit!<br> <a href='https://github.com/rm-hull/luma.oled'>https://github.com/rm-hull/luma.oled</a><br>
+He has the full documentation, installation, example code here: <a href='https://luma-oled.readthedocs.io'>https://luma-oled.readthedocs.io</a><br>
+Note that for the NanoPi NeoAir, the example code works, you just have to <b>change ports</b> `port=1` to `port=0`<br>
 <a href='https://gist.github.com/BiTinerary/36be549f8bc5ff132914bf70743985d7'>Here's</a> my custom gist of the exact commands and script that I ran.<br>
 
 When running a rendering script it claimed 56 FPS, however that can't be true. Through the `bubbles.py` test script and eye balling it, it's more around 15-20 FPS.<br>
