@@ -1,7 +1,6 @@
 # PocketServerPi
 A backup copy of my NanoPi Neo Air setup, running FriendlyArm, that I felt was worth documenting. More or less, my setup produces a portable proftpd, SSH, bluetooth media, minidlna, Access Point **and** samba server, etc.. rolled into one, for $30.
 
-<img src='https://s12.postimg.org/lawg9srv1/IMG_9943.jpg'>
 <img src='https://s18.postimg.org/4r4brjkd5/nano_Pi_OTG2.jpg'>
 <img src="https://s16.postimg.org/yhsbsdlj9/IMG_1838.jpg">
 
@@ -63,6 +62,9 @@ I typically start with: `sudo apt-get install nano htop wavemon screen samba min
   - <a href='https://help.ubuntu.com/community/MiniDLNA'>Setup minidlna</a>
 
 ### i2c Screen SSD1306
+<br>
+<img src='https://s12.postimg.org/lawg9srv1/IMG_9943.jpg'><br>
+<br>
 Much easier than I anticipated. Here's the module I downloaded/followed. Give this guy some credit!<br> <a href='https://github.com/rm-hull/luma.oled'>https://github.com/rm-hull/luma.oled</a><br>
 <br>
 He has the full documentation, installation, example code here: <a href='https://luma-oled.readthedocs.io'>https://luma-oled.readthedocs.io</a><br>
