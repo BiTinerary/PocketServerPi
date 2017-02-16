@@ -12,7 +12,7 @@ A backup copy of my NanoPi Neo Air setup, running FriendlyArm, that I felt was w
 - [Tutorials](#tutorials)
   - [Wifi](#wifi)
   - [Basic Tools](#basic-cli-tools)
-  - [i2C Screen](#i2c-Screen:-SSD1306)
+  - [i2C Screen](#i2c-Screen-SSD1306)
   - [Auto Swap WiFi AP/Client](#auto-swap-wifi-ap-and-client)
   - [Bluetooth](#bluetooth)
   - [GPIO](#gpio)
