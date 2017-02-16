@@ -68,7 +68,8 @@ He has the full documentation, installation, example code here: <a href='https:/
 Note that for the NanoPi NeoAir, the example code works, you just have to <b>change ports</b> `port=1` to `port=0`<br>
 <a href='https://gist.github.com/BiTinerary/36be549f8bc5ff132914bf70743985d7'>Here's</a> my custom gist of the exact commands and script that I ran.<br>
 
-When running a rendering script it claimed 56 FPS, however that can't be true. Through the `bubbles.py` test script and eye balling it, it's more around 15-20 FPS.<br>
+When running a rendering script it claimed 56 FPS, however that can't be true. Through the `bubbles.py` test script and eye balling it, it's more around <b>15-20 FPS</b>.<br>
+<br>
 The same guy also provides example scripts (Bubbles, Clock, sys_info, etc...) which are located <a href='https://github.com/rm-hull/luma.examples'>here</a>.<br>
 You run them like so... `sudo python bubbles.py --display ssd1306 --interface i2c --interface-port 0`<br>
 
