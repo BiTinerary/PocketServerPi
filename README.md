@@ -62,7 +62,7 @@ I typically start with: `sudo apt-get install nano htop wavemon screen samba min
   - <a href='https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20(Command-line%20interface/Linux%20Terminal)%20-%20Uncomplicated,%20Simple%20and%20Brief%20Way!'>Setup Samba</a> [*](#credit)
   - <a href='https://help.ubuntu.com/community/MiniDLNA'>Setup minidlna</a>
 
-### i2c Screen: SSD1306
+### i2c Screen SSD1306
 Much easier than I anticipated. Here's the module I downloaded/followed. Give this guy some credit! <a href='https://github.com/rm-hull/luma.oled'><br>
 He has the full documentation, installation, example code here: <a href='https://luma-oled.readthedocs.io'><br>
 Note that for the NanoPi NeoAir, the example code works, you just have to <b>change ports</b> `port=1` to `port=0`<br>
