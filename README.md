@@ -1,4 +1,4 @@
-# PocketServerPi -- in progress --
+# PocketServerPi
 A backup copy of my NanoPi Neo Air setup, running FriendlyArm, that I felt was worth documenting. More or less, my setup produces a portable proftpd, SSH, bluetooth media, minidlna, Access Point **and** samba server, etc.. rolled into one, for $30.
 
 <img src='https://s12.postimg.org/lawg9srv1/IMG_9943.jpg'>
