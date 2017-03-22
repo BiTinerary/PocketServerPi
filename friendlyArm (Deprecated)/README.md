@@ -1,10 +1,10 @@
 # PocketServerPi
-A backup copy of my NanoPi Neo Air setup, running Armbian, that I felt was worth documenting. More or less, my setup produces a portable proftpd, SSH, bluetooth media, minidlna, Access Point **and** samba server, etc.. rolled into one, for ~$30. Give or take.
+A backup copy of my NanoPi Neo Air setup, running FriendlyArm, that I felt was worth documenting. More or less, my setup produces a portable proftpd, SSH, bluetooth media, minidlna, Access Point **and** samba server, etc.. rolled into one, for $30.
 
 <img src='https://s18.postimg.org/4r4brjkd5/nano_Pi_OTG2.jpg'>
 <img src="https://s16.postimg.org/yhsbsdlj9/IMG_1838.jpg">
 
-##Table of Contents<br>
+##**Table of Contents**<br>
 - [Proof Of Concept and Examples](#proof-of-concept-and-examples)
 - [Build Materials](#build-materials)
 - [Installation](#installation)
@@ -30,15 +30,9 @@ If you're buying a NanoPi Neo Air, then this probably isn't your first rodeo. Us
 * <a href='http://www.taydaelectronics.com/bte13-007-cp2102-serial-converter-usb-2-0-to-ttl-uart-ftdi.html'>USB to UART Adapter</a>: $1.99<br>
 I ordered 4-5 items in addition to 2 of these from <a href='http://www.taydaelectronics.com'>Tayda</a> and S&H was only $1.26.
 * <a href='https://www.sparkfun.com/pages/RF_Conn_Guide'>U.FL (aka IPX) Antenna</a>: Cheap<br>
-<strike>This was something I had on hand, from a previous purchase. It's worth mentioning that you **will** need one of these if you want WiFi.</strike> NanoPi NeoAir's now ship with the necessary antenna included.
+This was something I had on hand, from a previous OrangePi purchase, that wasn't utilizing Wifi. It's worth mentioning that the Neo Air **doesn't** include **any kind** of external **or** internal antenna. You **will** need one of these if you want WiFi.
 
 ## Installation
-
-
-
-
-
-<strike>
 At the end of the day I prefer Armbian kernel and default setup. However, I reluctantly chose FriendlyArm's kernel since their binaries/drivers/support for the 'Access Point' feature that plays a significant role in this project, worked out of the box. Mostly, I got the guy up and running and haven't gone back and put too much effort into testing Armbian support. I'm told AP Mode is supported though. Eventually, I will work my way backwards and provide a similar write up as this one to feature Armbian as the kernel.
 
 Until I do a full conversion of this Repo over to Armbian, FergusL was kind enough to make some bash scripts to switch Apmode in Armbian <a href='https://forum.armbian.com/index.php/topic/3515-nanopi-neo-air-access-point/?p=26591'>Here's</a> a link to that. I've also duplicated them to the following gists, in case the link/post goes bad and for personal quick reference. <a href='https://gist.github.com/BiTinerary/693b8949ed56d6c534d138b9ba2b837e#file-stamode-sh'>stamode.sh</a> & <a href='https://gist.github.com/BiTinerary/693b8949ed56d6c534d138b9ba2b837e#file-apmode-sh'>apmode.sh</a><br>
@@ -117,4 +111,3 @@ They have zero to limited documentation for using GPIO at the moment. They said 
 - Setup Samba: https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20(Command-line%20interface/Linux%20Terminal)%20-%20Uncomplicated,%20Simple%20and%20Brief%20Way!
 - Setup minidlna: https://help.ubuntu.com/community/MiniDLNA
 - Setup proftpd: https://www.liquidweb.com/kb/how-to-install-and-configure-proftpd-on-ubuntu-14-04-lts/
-</strike></strike>
