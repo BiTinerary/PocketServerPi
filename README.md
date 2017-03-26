@@ -59,7 +59,7 @@ Ditch the USB to UART adapter and use Serial over USB via OTG with a few simple 
 `nano /etc/systemd/system/serial-getty@ttyGS0.service.d/10-switch-role.conf`<br>
 <br>
 Make sure the following lines are in that config.<br>
-`[Service]<br>
+`[Service]
 ExecStartPre=-/bin/sh -c "echo 2 > /sys/bus/platform/devices/sunxi_usb_udc/otg_role"`<br>
 `systemctl --no-reload enable serial-getty@ttyGS0.service`<br>
 `echo "ttyGS0" >> /etc/securetty`<br>
