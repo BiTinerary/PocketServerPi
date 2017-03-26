@@ -5,7 +5,7 @@ A backup copy of my NanoPi Neo Air setup, running Armbian, that I felt was worth
 <img src="https://s16.postimg.org/yhsbsdlj9/IMG_1838.jpg">
 
 ## Table of Contents
-- [Proof Of Concept and Examples](#proof-of-concept-and-examples)
+- [Proof Of Concept and Examples](#proof-of-concept,-examples-and-specs)
 - [Build Materials](#build-materials)
 - [Installation](#installation)
 - [Tutorials](#tutorials)
@@ -16,7 +16,7 @@ A backup copy of my NanoPi Neo Air setup, running Armbian, that I felt was worth
   - [Bluetooth](#bluetooth)
   - [GPIO](#gpio)
 
-## Proof of Concept and Examples
+## Proof of Concept, Examples and Specs
 SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
 <p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sshoverhttpviabutterfly.gif'>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sambaserverresize.gif"></p>
 
