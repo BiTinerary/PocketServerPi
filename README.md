@@ -49,18 +49,18 @@ Simply type command `nmtui`, you'll see a text based GUI >> "Activate a connecti
 ### Initial Setup and Tools
 Here's a <a href='https://gist.github.com/BiTinerary/82fc8a5c9fd15935c6c96d067f4ee1bd'>bash script</a> of the things I start off with to get the essentials and tools that are not included in Armbian for minimalist reasons. It's not been tested (as a bash script) but is a working reference to install pip, dev tools, updates, samba, etc...<br>
 
-Ditch the USB to UART adapter and use Serial over USB via OTG with less than 5 commands. (Some of these should be unnecessary since g_serial is compiled in Armbian)<br>
+Ditch the USB to UART adapter and use Serial over USB via OTG with a few simple commands. (Some of these should be unnecessary since g_serial is compiled in Armbian)<br>
 `sudo su`<br>
 `echo "g_serial" >> /etc/modules`<br>
 `nano /etc/systemd/system/serial-getty@ttyGS0.service.d/10-switch-role.conf`<br>
 Make sure the following lines are in that config.
-`[Service]
-ExecStartPre=-/bin/sh -c "echo 2 > /sys/bus/platform/devices/sunxi_usb_udc/otg_role"`
+`[Service]<br>
+ExecStartPre=-/bin/sh -c "echo 2 > /sys/bus/platform/devices/sunxi_usb_udc/otg_role"`<br>
 `systemctl --no-reload enable serial-getty@ttyGS0.service`<br>
 `echo "ttyGS0" >> /etc/securetty`<br>
 `reboot`<br>
 <br>
-If config file or directory doesn't exist. Create directory and repeat previous `nano` command to create file.<br>
+If config `file or directory doesn't exist`. Create directory and repeat previous `nano` command to create file.<br>
 `mkdir -p /etc/systemd/system/serial-getty@ttyGS0.service.d`<br>
 
 ### i2c Screen SSD1306
