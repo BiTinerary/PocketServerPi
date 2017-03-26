@@ -40,9 +40,9 @@ You know the drill. Get your Micro SD Card out. Here's Armbian's link to <a href
 Armbian's default credentials are... User: `root` Pswd: `1234`<br>
 You will immediately be prompted to change password and create a sudoer user.<br>
 <br>
-You can write the contents of the Micro SD card to the onboard eMMC storage by issuing `nand-sata-install`. I prefer to hold off on that though and install all my prefered programs, edit configs, etc... and complete the entire Linux setup on the Micro SD Card. <b>Then</b> I will write to the eMMC.<br>
+You can write the contents of the Micro SD card to the onboard eMMC storage by issuing `nand-sata-install`. I prefer to hold off on that though and install (the stuff below) prefered programs, edit configs, etc... and complete the entire Linux setup on the Micro SD Card. <b>Then</b> I will write to the eMMC.<br>
 <br>
-This produces a Micro SD Card and eMMC that both have your ideal, personalized configuration. I will keep the SD Card as is, then do crazy installation, recent updates, network management and testing on the eMMC. If anything goes wrong, plop the SD Card back in and overwrite the eMMC.
+This produces a Micro SD Card and eMMC that both have your ideal, personalized configuration. Keep the SD Card as is, if anything goes wrong after an update or w/e, plop the SD Card back in and overwrite the eMMC.
 
 ## Tutorials
 
