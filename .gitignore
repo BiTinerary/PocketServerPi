@@ -1,3 +1,6 @@
 friendlyArmKernel/
 friendlyArmKernel/switchAPMode/switchAPMode.py
 friendlyArmKernel/miscScripts/blinkPerOrder.py
+
+special-vendored-path/friendlyArmKernel/* linguist-vendored
+python.py linguist-vendored=false
