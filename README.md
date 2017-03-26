@@ -10,7 +10,7 @@ A backup copy of my NanoPi Neo Air setup, running Armbian, that I felt was worth
 - [Installation](#installation)
 - [Tutorials](#tutorials)
   - [Wifi](#wifi)
-  - [Basic Tools](#basic-cli-tools)
+  - [Basic Tools](#initial-setup-and-tools)
   - [i2C Screen](#i2c-screen-ssd1306)
   - [Auto Swap WiFi AP/Client](#auto-swap-wifi-ap-and-client)
   - [Bluetooth](#bluetooth)
@@ -47,29 +47,27 @@ Congratulations. You're in. Now for fun stuff.
 Armbian makes connecting to the internet easy by including `nmtui` (Network Manager Text User Interface Tool). Connecting to an SSID should be self explanitory so I'm not going to go into crazy specifics. However, here's the idea.
 Simply type command `nmtui`, you'll see a text based GUI >> "Activate a connection" >> Select "Your SSID Name" >> "Activate" >> Prompted for SSID Password >> You're good to google. If you would like to change more settings, activate the AccessPoint then go back and select "Edit a Connection"
 
-### Getting started, updates, CLI tools and configs.
+### Initial Setup and Tools
 Here's a <a href='https://gist.github.com/BiTinerary/82fc8a5c9fd15935c6c96d067f4ee1bd'>bash script</a> of the things I start off with to get the essentials and tools that are not included in Armbian for minimalist reasons. ie: pip, python-dev tools, updates, samba server, etc... It's not been tested (as a bash script), just a reference of working step-by-step commands.
 
 ### i2c Screen SSD1306
 <img src='https://s12.postimg.org/lawg9srv1/IMG_9943.jpg'><br>
 <br>
-Here's the GitHub repo of a python module that I've tested and am using. Give this guy some credit!<br> <a href='https://github.com/rm-hull/luma.oled'>https://github.com/rm-hull/luma.oled</a><br>
-In a perfect world, you'd run this.
+Here's a repo of a python module that I've tested and used for screens. Give this guy some credit!<a href='https://github.com/rm-hull/luma.oled'>https://github.com/rm-hull/luma.oled</a><br>
+In a perfect world, you'd run this.<br>
+`git clone https://github.com/rm-hull/luma.oled`<br>
+`cd luma.oled/ && pip install .`<br>
+`git clone https://github.com/rm-hull/luma.examples`<br>
+`python ./luma.examples/examples/sys_info.py --display ssd1306 --interface i2c --i2c-port 0`<br>
 <br>
-`git clone https://github.com/rm-hull/luma.oled`
-`cd luma.oled/ && pip install .`
-`git clone https://github.com/rm-hull/luma.examples`
-`python ./luma.examples/examples/sys_info.py --display ssd1306 --interface i2c --i2c-port 0`
-<br>
-However, expect missing dependencies, errors codes when trying to install the repo because RM-Hull's repo is aimed at Raspi devices, which includes different libraries by default than Armbian<br> Don't fear though, let me save you some yak shaving by showing you <a href='https://gist.github.com/BiTinerary/60a20e7bc5a76320d7e6e3230b79c392'>this gist</a> which goes over, in brief detail, the commands I run everytime, to get requirements and the SSD1306 up and running.
+However, expect missing dependencies, errors codes when trying to install the repo because RM-Hull's repo is aimed at Raspi devices, which includes different libraries by default than Armbian<br>
+Let me save you some yak shaving by showing you <a href='https://gist.github.com/BiTinerary/60a20e7bc5a76320d7e6e3230b79c392'>this gist</a> which goes over, in brief detail, the commands I run everytime, to get requirements and the SSD1306 up and running.
 
-Full documentation, installation and example code are available here: <a href='https://luma-oled.readthedocs.io'>https://luma-oled.readthedocs.io</a><br>
-Note that for the NanoPi NeoAir, the example code works, you just have to <b>change ports</b> `port=1` to `port=0`<br>
+Full documentation, installation and example code are available here: <a href='https://luma-oled.readthedocs.io'>https://luma-oled.readthedocs.io</a> Note that for the NanoPi NeoAir, the example code works, you just have to <b>change ports</b> `port=1` to `port=0`<br>
 Through the `bubbles.py` test script and eye balling it, the SSD1306 gets about <b>15-20FPS</b>.<br>
 <br>
-The same guy also provides test scripts for animations, games, system info and more. Those scripts can be downloaded from a repository over <a href='https://github.com/rm-hull/luma.examples'>here</a>.<br>
-You run them like so... `sudo python sys_info.py --display ssd1306 --interface i2c --i2c-port 0`<br>
-<br>
+The same guy also provides test scripts for animations, games, system info and more. Those scripts can be downloaded from a repository over <a href='https://github.com/rm-hull/luma.examples'>here</a>. You run them like so...<br>
+`sudo python sys_info.py --display ssd1306 --interface i2c --i2c-port 0`<br>
 
 ### Auto Swap WiFi AP and Client
 This is a ported tutorial from when I was using FriendlyArm's kernel. So at the moment I haven't had the opportunity to flush out APMode swapping, that proved to work seemlessly in the previous version.
