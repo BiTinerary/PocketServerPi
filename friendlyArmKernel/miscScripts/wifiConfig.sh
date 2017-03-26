@@ -1,2 +1,0 @@
-touch /etc/wpa_supplicant/wpa_supplicant.conf
-echo -e 'ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\nupdate_config=1\nnetwork={\n\t ssid="YOUR-WIFI-ESSID"\n\t psk="YOUR-WIFI-PASSWORD"\n}' >> /etc/wpa_supplicant/wpa_supplicant.conf
