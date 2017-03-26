@@ -4,7 +4,7 @@ A backup copy of my NanoPi Neo Air setup, running Armbian, that I felt was worth
 <img src='https://s18.postimg.org/4r4brjkd5/nano_Pi_OTG2.jpg'>
 <img src="https://s16.postimg.org/yhsbsdlj9/IMG_1838.jpg">
 
-##Table of Contents<br>
+## Table of Contents
 - [Proof Of Concept and Examples](#proof-of-concept-and-examples)
 - [Build Materials](#build-materials)
 - [Installation](#installation)
@@ -33,13 +33,11 @@ I ordered 4-5 items in addition to 2 of these from <a href='http://www.taydaelec
 
 ## Installation
 
-You know the drill. Get your Micro SD Card out. Here's Armbian's link to <a href='https://www.armbian.com/nanopi-neo-air/'>download</a> their kernel. Write to a MicroSD card using <a href='https://sourceforge.net/projects/win32diskimager/files/Archive/'>Win32 Disk Imager</a>. Put MicroSD into device, wait for LEDs to blink. From here you will need to use your USB to UART Adapter to make a serial connection between your computer and the NeoAir. If you are unfamiliar with that process, or having difficulty, check out this <a href='https://gist.github.com/BiTinerary/5d759c5715c2432e9830842171f97c4c'>Gist</a>. You won't always need to use the UART adapter, just to get you going.
+You know the drill. Get your Micro SD Card out. Here's Armbian's link to <a href='https://www.armbian.com/nanopi-neo-air/'>download</a> their kernel. Write to a MicroSD card using <a href='https://sourceforge.net/projects/win32diskimager/files/Archive/'>Win32 Disk Imager</a>. Put MicroSD into device, wait for LEDs to blink. From here you will need to use your USB to UART Adapter to make a serial connection between your computer and the NeoAir. If you are unfamiliar with that process, or having difficulty, check out this <a href='https://gist.github.com/BiTinerary/5d759c5715c2432e9830842171f97c4c'>Gist</a>. You won't always need to use the UART adapter, just enough to get you going.
 
 Armbian's default credentials are as follows<br>
-user:`root` password:`1234`
-You will immediately be prompted to change password and create a sudoer user.
-
-Congratulations. You're in. Now for fun stuff.
+user:`root` password:`1234`<br>
+You will immediately be prompted to change password and create a sudoer user. Congratulations. You're in. Now for fun stuff.
 
 ## Tutorials
 
@@ -48,7 +46,8 @@ Armbian makes connecting to the internet easy by including `nmtui` (Network Mana
 Simply type command `nmtui`, you'll see a text based GUI >> "Activate a connection" >> Select "Your SSID Name" >> "Activate" >> Prompted for SSID Password >> You're good to google. If you would like to change more settings, activate the AccessPoint then go back and select "Edit a Connection"
 
 ### Initial Setup and Tools
-Here's a <a href='https://gist.github.com/BiTinerary/82fc8a5c9fd15935c6c96d067f4ee1bd'>bash script</a> of the things I start off with to get the essentials and tools that are not included in Armbian for minimalist reasons. ie: pip, python-dev tools, updates, samba server, etc... It's not been tested (as a bash script), just a reference of working step-by-step commands.
+Here's a <a href='https://gist.github.com/BiTinerary/82fc8a5c9fd15935c6c96d067f4ee1bd'>bash script</a> of the things I start off with to get the essentials and tools that are not included in Armbian for minimalist reasons. ie: pip, python-dev tools, updates, samba server, etc...<br>
+It's not been tested (as a bash script), just a reference of working step-by-step commands.
 
 ### i2c Screen SSD1306
 <img src='https://s12.postimg.org/lawg9srv1/IMG_9943.jpg'><br>
