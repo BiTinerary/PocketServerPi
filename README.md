@@ -47,7 +47,7 @@ Armbian makes connecting to the internet easy by including `nmtui` (Network Mana
 Simply type command `nmtui`, you'll see a text based GUI >> "Activate a connection" >> Select "Your SSID Name" >> "Activate" >> Prompted for SSID Password >> You're good to google. If you would like to change more settings, activate the AccessPoint then go back and select "Edit a Connection"
 
 ### Initial Setup and Tools
-Here's a <a href='https://gist.github.com/BiTinerary/82fc8a5c9fd15935c6c96d067f4ee1bd'>bash script</a> of the things I start off with to get the essentials and tools that are not included in Armbian for minimalist reasons. It's not been tested (as a bash script) but is a working reference step-by-step commands to install pip, dev tools, updates, samba, etc...<br>.
+Here's a <a href='https://gist.github.com/BiTinerary/82fc8a5c9fd15935c6c96d067f4ee1bd'>bash script</a> of the things I start off with to get the essentials and tools that are not included in Armbian for minimalist reasons. It's not been tested (as a bash script) but is a working reference to install pip, dev tools, updates, samba, etc...<br>.
 
 ### i2c Screen SSD1306
 <img src='https://s12.postimg.org/lawg9srv1/IMG_9943.jpg'><br>
