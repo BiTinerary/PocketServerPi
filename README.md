@@ -38,7 +38,12 @@ I ordered 4-5 items in addition to 2 of these from <a href='http://www.taydaelec
 You know the drill. Get your Micro SD Card out. Here's Armbian's link to <a href='https://www.armbian.com/nanopi-neo-air/'>download</a> their kernel. Write to a MicroSD card using <a href='https://sourceforge.net/projects/win32diskimager/files/Archive/'>Win32 Disk Imager</a>. Put MicroSD into device, wait for LEDs to blink. From here you will need to use your USB to UART Adapter to make a serial connection between your computer and the NeoAir. If you are unfamiliar with that process, or having difficulty, check out this <a href='https://gist.github.com/BiTinerary/5d759c5715c2432e9830842171f97c4c'>Gist</a>. You won't always need to use the UART adapter, just enough to get you going.
 
 Armbian's default credentials are... User: `root` Pswd: `1234`<br>
-You will immediately be prompted to change password and create a sudoer user.
+You will immediately be prompted to change password and create a sudoer user.<br>
+<br>
+
+You can write the contents of the Micro SD card to the onboard eMMC storage by issuing `nand-sata-install`. I prefer to hold off on that though and install all my prefered programs, edit configs, etc... and complete the entire Linux setup on the Micro SD Card. <b>Then</b> I will write to the eMMC.<br>
+<br>
+This produces a Micro SD Card and eMMC that both have your ideal, personalized configuration. I will keep the SD Card as is, then do crazy installation, recent updates, network management and testing on the eMMC. If anything goes wrong, plop the SD Card back in and overwrite the eMMC.
 
 ## Tutorials
 
