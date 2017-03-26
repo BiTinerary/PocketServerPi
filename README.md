@@ -49,7 +49,7 @@ Simply type command `nmtui`, you'll see a text based GUI >> "Activate a connecti
 ### Initial Setup and Tools
 Here's a <a href='https://gist.github.com/BiTinerary/82fc8a5c9fd15935c6c96d067f4ee1bd'>bash script</a> of the things I start off with to get the essentials and tools that are not included in Armbian for minimalist reasons. It's not been tested (as a bash script) but is a working reference to install pip, dev tools, updates, samba, etc...<br>
 
-Ditch the USB to UART adapter and use Serial over USB via OTG with a few simple commands. (Some of these should be unnecessary since g_serial is compiled in Armbian)<br>
+Ditch the USB to UART adapter and use Serial over USB via OTG with a few simple commands. Credits to tutorial below<br>
 `sudo su`<br>
 `echo "g_serial" >> /etc/modules`<br>
 `nano /etc/systemd/system/serial-getty@ttyGS0.service.d/10-switch-role.conf`<br>
