@@ -5,7 +5,7 @@ A backup copy of my NanoPi Neo Air setup, running Armbian, that I felt was worth
 <img src="https://s16.postimg.org/yhsbsdlj9/IMG_1838.jpg">
 
 ## Table of Contents
-- [Proof Of Concept and Examples](#proof-of-concept,-examples-and-specs)
+- [Concept, Examples and Specs](#proof-of-concept-examples-and-specs)
 - [Build Materials](#build-materials)
 - [Installation](#installation)
 - [Tutorials](#tutorials)
