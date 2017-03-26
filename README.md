@@ -71,7 +71,7 @@ This is a ported tutorial from when I was using FriendlyArm's kernel. So at the 
 For now FergusL over on the Armbian forums was kind enough to make some bash scripts to do that.<br>I haven't got them working as of yet but I'm pretty sure it's user error on my part. So results will vary :P <a href='https://forum.armbian.com/index.php/topic/3515-nanopi-neo-air-access-point/?p=26591'>Here's</a> a link to that. I've also duplicated them to the following gists, in case the link/post goes bad and for personal quick reference. <a href='https://gist.github.com/BiTinerary/693b8949ed56d6c534d138b9ba2b837e#file-stamode-sh'>stamode.sh</a> & <a href='https://gist.github.com/BiTinerary/693b8949ed56d6c534d138b9ba2b837e#file-apmode-sh'>apmode.sh</a><br>
 
 ### Bluetooth
-- <a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'>This Gist</a><br> or the following tutorial that is confirmed to work(ish): https://wiki.archlinux.org/index.php/Bluetooth_headset
+<a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'>This Gist</a><br> or the following tutorial that is confirmed to work(ish): https://wiki.archlinux.org/index.php/Bluetooth_headset
 
 ### GPIO
 To be determined. RPi.GPIO works though, with alterations.
