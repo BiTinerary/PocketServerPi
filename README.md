@@ -50,7 +50,7 @@ Simply type command `nmtui`, you'll see a text based GUI >> "Activate a connecti
 Here's a <a href='https://gist.github.com/BiTinerary/82fc8a5c9fd15935c6c96d067f4ee1bd'>bash script</a> of the things I start off with to get the essentials and tools that are not included in Armbian for minimalist reasons. It's not been tested (as a bash script) but is a working reference to install pip, dev tools, updates, samba, etc...<br>
 
 ### i2c Screen SSD1306
-<img src='https://s12.postimg.org/lawg9srv1/IMG_9943.jpg'><br>
+<img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/ssd1306NeoAir.jpg'><br>
 <br>
 Here's a repo of a python module that I've used for screens.<br>Give this guy some credit! <a href='https://github.com/rm-hull/luma.oled'>https://github.com/rm-hull/luma.oled</a><br>
 <br>
