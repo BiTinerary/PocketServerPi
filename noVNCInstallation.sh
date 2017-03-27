@@ -1,6 +1,10 @@
 #!/bin/bash
-#All credits to my boy over at https://github.com/MitchRatquest
+# All credits to my boy over at https://github.com/MitchRatquest
+# Install all missing dependencies, install noVNC. Which gives you SSH access of desktop, CLI, etc.. in a browser.
+# https://github.com/novnc/noVNC
+#
 #gather the berries
+#
 install=""
 if ! [ -x "$(command -v xterm)" ]; then
   echo 'Error: xterm needs to be installed.' >&2
