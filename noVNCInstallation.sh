@@ -1,4 +1,5 @@
 #!/bin/bash
+#All credits to my boy over at https://github.com/MitchRatquest
 #gather the berries
 install=""
 if ! [ -x "$(command -v xterm)" ]; then
