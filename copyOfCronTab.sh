@@ -21,4 +21,6 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 #
 # m h  dom mon dow   command
+#@reboot /usr/bin/python2.7 /usr/local/bin/butterfly.server.py --host="0.0.0.0" --port=57575 --unsecure
+#@reboot /usr/bin/python2.7 /home/stuxnet/blinkPerOrder/blinkPerOrder.py >/home/stuxnet/switchAPMode/Logs/cronlog 2>&1
 @reboot /usr/bin/python2.7 /home/stuxnet/samba/luma.examples-master/examples/sys_info.py --display ssd1306 --rotate 2 --interface i2c --i2c-port 0
