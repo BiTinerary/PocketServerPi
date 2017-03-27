@@ -2,8 +2,9 @@
 # All credits to my boy over at https://github.com/MitchRatquest
 # Install all missing dependencies, install noVNC. Which gives you SSH access of desktop, CLI, etc.. in a browser.
 # https://github.com/novnc/noVNC
-#
-#gather the berries
+# !!CAUTION!! This could take upwards of an hour to install if numpy needs to be compiled !!
+# (which is the case when running Armbian on NanoPiNeoAir)
+# gather the berries
 #
 install=""
 if ! [ -x "$(command -v xterm)" ]; then
