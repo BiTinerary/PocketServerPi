@@ -15,6 +15,7 @@ A backup copy of my NanoPi Neo Air setup, running Armbian, that I felt was worth
   - [Auto Swap WiFi AP/Client](#auto-swap-wifi-ap-and-client)
   - [Bluetooth](#bluetooth)
   - [GPIO](#gpio)
+- [Credit and Sources](#credit)
 
 ## Proof of Concept, Examples and Specs
 SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
@@ -111,7 +112,7 @@ To be determined. RPi.GPIO works though, with alterations.
 * Create a basic, generalized image (personal passwords/credz removed) so that USB to UART adapter is not needed for setup and can be accessed directly via SSH, Butterfly, Putty etc...
 * Boot as HID device, extending the "swiss army knife" capabilities to Rubber Ducky territory.
 
-## <u>Credit</u>
+## Credit
 - Mr. Anderson's answer that didn't get enough credit, <a href='http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none'>here</a>.
 - Setup Samba: https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20(Command-line%20interface/
 - RM-Hull for his pythonic screen repositories: https://github.com/rm-hull/luma.oled
