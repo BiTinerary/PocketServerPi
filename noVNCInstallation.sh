@@ -2,7 +2,7 @@
 # All credits to my boy over at https://github.com/MitchRatquest
 # Install all missing dependencies, install noVNC. Which gives you SSH access of desktop, CLI, etc.. in a browser.
 # https://github.com/novnc/noVNC
-# !!CAUTION!! This could take upwards of an hour to install if numpy needs to be compiled !!
+# !!CAUTION!! This could take a long time (30-45+ min) to install if numpy needs to be compiled !!
 # (which is the case when running Armbian on NanoPiNeoAir)
 # gather the berries
 #
