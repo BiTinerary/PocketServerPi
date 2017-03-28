@@ -11,6 +11,7 @@ A backup copy of my NanoPi Neo Air setup, running Armbian, that I felt was worth
 - [Tutorials](#tutorials)
   - [Wifi](#wifi)
   - [Basic Tools](#initial-setup-and-tools)
+  - [SSH in Web Browser](#ssh-in-web-browser-with-novnc)
   - [i2C Screen](#i2c-screen-ssd1306)
   - [Auto Swap WiFi AP/Client](#auto-swap-wifi-ap-and-client)
   - [Bluetooth](#bluetooth)
@@ -68,6 +69,12 @@ Make sure the following lines are in that config.<br>
 <br>
 If config `file or directory doesn't exist`. Create directory and repeat previous `nano` command to create file.<br>
 `mkdir -p /etc/systemd/system/serial-getty@ttyGS0.service.d`<br>
+
+### SSH in Web Browser with noVNC
+
+Run the **`noVNCAutoInstall.sh`** bash script included in this repo. Credits for the script to @MitchRatquest and to <a href='https://github.com/novnc/noVNC'>noVNC</a> for their utility. Here I am running `htop` and `wavemon` with a `screen` session. Add `@reboot bash /home/stuxnet/samba/noVNC/vnc.sh` to `crontab -e` to start noVNC on startup and ditch serial connection and/or PuTTY all together.
+<br>
+<p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/noVNConScreen.png'></p>
 
 ### i2c Screen SSD1306
 <img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/ssd1306NeoAir.jpg'><br>
