@@ -75,6 +75,7 @@ Run the `noVNCAutoInstallation.sh` bash script included in this repo. Here I am 
 <br>
 <p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/noVNConScreen.png'></p>
 Credits for the script to <a href='https://github.com/MitchRatquest'>MitchRatquest</a> and to <a href='https://github.com/novnc/noVNC'>noVNC</a> for their utility.
+
 ### i2c Screen SSD1306
 <img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/ssd1306NeoAir.jpg'><br>
 <br>
