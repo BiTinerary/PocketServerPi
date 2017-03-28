@@ -1,4 +1,8 @@
 #!/bin/bash
+#ALL CREDITS GO TO MITCHELL OVER @ https://github.com/MitchRatquest
+#RAW GIST AVAILABLE HERE: https://gist.github.com/MitchRatquest/21805fc7c1534d99344acb627721630b
+#CONSULT GIST IF INSTALLING FOR ARMBIAN ON NEOAIR AND RUNNING INTO ERROR W/NO VNC 'loop'
+#
 #added kill function
 #run as:
 #./SCRIPTNAME.sh k
