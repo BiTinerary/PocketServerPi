@@ -71,8 +71,7 @@ If config `file or directory doesn't exist`. Create directory and repeat previou
 `mkdir -p /etc/systemd/system/serial-getty@ttyGS0.service.d`<br>
 
 ### SSH in Web Browser with noVNC
-
-Run the **`noVNCAutoInstall.sh`** bash script included in this repo. Credits for the script to @MitchRatquest and to <a href='https://github.com/novnc/noVNC'>noVNC</a> for their utility. Here I am running `htop` and `wavemon` with a `screen` session. Add `@reboot bash /home/stuxnet/samba/noVNC/vnc.sh` to `crontab -e` to start noVNC on startup and ditch serial connection and/or PuTTY all together.
+Run the `noVNCAutoInstallation.sh` bash script included in this repo. Credits for the script to @MitchRatquest and to <a href='https://github.com/novnc/noVNC'>noVNC</a> for their utility. Here I am running `htop` and `wavemon` with a `screen` session. Add `@reboot bash /home/stuxnet/samba/noVNC/vnc.sh` to `crontab -e` to start noVNC on startup and ditch serial connection and/or PuTTY all together.
 <br>
 <p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/noVNConScreen.png'></p>
 
