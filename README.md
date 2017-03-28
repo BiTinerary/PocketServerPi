@@ -72,7 +72,7 @@ If config `file or directory doesn't exist`. Create directory and repeat previou
 ### i2c Screen SSD1306
 <img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/ssd1306NeoAir.jpg'><br>
 <br>
-Here's a repo of a python module that I've used for screens.<br>Give this guy some credit! <a href='https://github.com/rm-hull/luma.oled'>https://github.com/rm-hull/luma.oled</a><br>
+Here's a repo of a python module that I've used for screens. Give this guy some credit! <a href='https://github.com/rm-hull/luma.oled'>https://github.com/rm-hull/luma.oled</a><br>
 <br>
 In a perfect world, you'd run this:<br>
 `git clone https://github.com/rm-hull/luma.oled`<br>
