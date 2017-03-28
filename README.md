@@ -71,10 +71,10 @@ If config `file or directory doesn't exist`. Create directory and repeat previou
 `mkdir -p /etc/systemd/system/serial-getty@ttyGS0.service.d`<br>
 
 ### SSH in Web Browser with noVNC
-Run the `noVNCAutoInstallation.sh` bash script included in this repo. Credits for the script to <a href='https://github.com/MitchRatquest'>MitchRatquest</a> and to <a href='https://github.com/novnc/noVNC'>noVNC</a> for their utility. Here I am running `htop` and `wavemon` with a `screen` session.<br> Add `@reboot bash /home/stuxnet/samba/noVNC/vnc.sh` to `crontab -e` to run noVNC on startup and ditch PuTTY/serial completely.
+Run the `noVNCAutoInstallation.sh` bash script included in this repo. Here I am running `htop` and `wavemon` with a `screen` session. Add `@reboot bash /home/stuxnet/samba/noVNC/vnc.sh` to `crontab -e` to run noVNC on startup and ditch PuTTY/serial completely.
 <br>
 <p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/noVNConScreen.png'></p>
-
+Credits for the script to <a href='https://github.com/MitchRatquest'>MitchRatquest</a> and to <a href='https://github.com/novnc/noVNC'>noVNC</a> for their utility.
 ### i2c Screen SSD1306
 <img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/ssd1306NeoAir.jpg'><br>
 <br>
@@ -119,6 +119,8 @@ To be determined. RPi.GPIO works though, with alterations.
 * Boot as HID device, extending the "swiss army knife" capabilities to Rubber Ducky territory.
 
 ## Credit
+- <a href='https://github.com/MitchRatquest'>MitchRatquest</a> for contribution to auto install noVNC. <a href='https://gist.github.com/MitchRatquest/21805fc7c1534d99344acb627721630b'>Here</a>
+- noVNC, `nuf said. https://github.com/novnc/noVNC
 - Mr. Anderson's answer that didn't get enough credit, <a href='http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none'>here</a>.
 - Setup Samba: https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20(Command-line%20interface/
 - RM-Hull for his pythonic screen repositories: https://github.com/rm-hull/luma.oled
