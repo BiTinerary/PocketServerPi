@@ -47,10 +47,6 @@ This produces a Micro SD Card and eMMC that both have your ideal, personalized c
 
 ## Tutorials
 
-### Wifi
-Armbian makes connecting to the internet easy by including `nmtui` (Network Manager Text User Interface Tool). Connecting to an SSID should be self explanitory so I'm not going to go into crazy specifics. However, here's the idea.
-Simply type command `nmtui`, you'll see a text based GUI >> "Activate a connection" >> Select "Your SSID Name" >> "Activate" >> Prompted for SSID Password >> You're good to google. If you would like to change more settings, activate the AccessPoint then go back and select "Edit a Connection"
-
 ### Initial Setup and Tools
 Here's a <a href='https://gist.github.com/BiTinerary/82fc8a5c9fd15935c6c96d067f4ee1bd'>bash script</a> of the things I start off with to get the essentials and tools that are not included in Armbian for minimalist reasons. It's not been tested (as a bash script) but is a working reference to install pip, dev tools, updates, samba, etc...<br>
 
@@ -68,6 +64,10 @@ Make sure the following lines are in that config.<br>
 <br>
 If config `file or directory doesn't exist`. Create directory and repeat previous `nano` command to create file.<br>
 `mkdir -p /etc/systemd/system/serial-getty@ttyGS0.service.d`<br>
+
+### Wifi
+Armbian makes connecting to the internet easy by including `nmtui` (Network Manager Text User Interface Tool). Connecting to an SSID should be self explanitory so I'm not going to go into crazy specifics. However, here's the idea.
+Simply type command `nmtui`, you'll see a text based GUI >> "Activate a connection" >> Select "Your SSID Name" >> "Activate" >> Prompted for SSID Password >> You're good to google. If you would like to change more settings, activate the AccessPoint then go back and select "Edit a Connection"
 
 ### i2c Screen SSD1306
 <img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/ssd1306NeoAir.jpg'><br>
