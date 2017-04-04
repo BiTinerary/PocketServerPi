@@ -69,6 +69,7 @@ Make sure the following lines are in that config.<br>
 <br>
 If config `file or directory doesn't exist`. Create directory and repeat previous `nano` command to create file.<br>
 `mkdir -p /etc/systemd/system/serial-getty@ttyGS0.service.d`<br>
+You might need a Gadget Serial v2.4 driver if running on Windows. I've included a <a href='https://github.com/BiTinerary/PocketServerPi/blob/master/gistScripts/linux-cdc-acm.inf'>.inf file</a>, provided by <a href='https://bbs.nextthing.co/t/need-gadget-serial-v2-4-driver-for-windows-7/2044'>this</a> forum. Just download, run Device Manager (`devmgmt.msc`), right click missing COM Driver, manually select downloaded .inf file.
 
 ### SSH in Web Browser with noVNC
 Run the `noVNCAutoInstallation.sh` bash script included in this repo. Here I am running `htop` and `wavemon` with a `screen` session. Add `@reboot bash /home/stuxnet/samba/noVNC/vnc.sh` to `crontab -e` to run noVNC on startup and ditch PuTTY/serial completely.
