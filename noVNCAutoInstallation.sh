@@ -1,7 +1,12 @@
 #!/bin/bash
 #ALL CREDITS GO TO MITCHELL OVER @ https://github.com/MitchRatquest
 #RAW GIST AVAILABLE HERE: https://gist.github.com/MitchRatquest/21805fc7c1534d99344acb627721630b
-#CONSULT GIST IF INSTALLING FOR ARMBIAN ON NEOAIR AND RUNNING INTO ERROR W/NO VNC 'loop'
+#If running on Armbian/Neo Air and you get the following error:
+#cannot load font '-misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-
+# Then run these commands afterwards.
+# sudo apt-get install xfonts-base
+# reboot
+
 #
 #added kill function
 #run as:
