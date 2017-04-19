@@ -106,13 +106,14 @@ To be determined. RPi.GPIO works though, with alterations.
 
 ## Use case
 ~ A $30 version of this:<br> https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1<br>
-~ <a href='https://github.com/BiTinerary/PocketServerPi/blob/master/miscScripts/blinkPerOrder.py'>blinkPerOrder.py</a> uses eBay API to get current orders that haven't been shipped, then blinks onboard LED that many times.
+~ <a href='https://github.com/BiTinerary/PocketServerPi/blob/master/friendlyArmKernel/miscScripts/blinkPerOrder.py'>blinkPerOrder.py</a> uses eBay API to get current orders that haven't been shipped, then blinks onboard LED that many times.
 ~ Consistant, Portable access to a Linux box or python terminal.<br>
 ~ Linux box that can be used as a disposable scratchpad.<br>
 ~ Painless and local (much safer) Samba Share for file sharing between work **and** home without ever touching a button<br>
 ~ Minidlna server for Consoles, Medial Players, etc...<br>
 ~ `if static ip present; do wakeonlan` ie: wireless, buttonless, IOT trigger.<br>
 ~ Captive portals and automated node/client pentesting.<br>
+~ <a href='https://github.com/kosborn/p2p-adb'>p2pADB</a> `if` new device connected via OTG? `then` run exploit. Save to microSD. `else` wait.
 
 ## TODO
 * Wifi Mode automation and swap from Client to AP has proved to work reliably. Python scripts (switchAPMode/blinkPerOrder) should be moved, to /etc/network/if-down.d and if-up.d respectively.
