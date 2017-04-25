@@ -21,7 +21,7 @@ A backup copy of my NanoPi Neo Air setup, running Armbian, that I felt was worth
 ## Proof of Concept, Examples and Specs
 SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
 
-* <b>Runtime</b>: 4 hours 19 minutes on 2200mAh battery
+* <b>Runtime</b>: 4 hours 19 minutes on 2200mAh battery on a base load.
 * <b>FPS</b>: 15-20FPS on SSD1306
 
 <p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sshoverhttpviabutterfly.gif'>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/sambaserverresize.gif"></p>
