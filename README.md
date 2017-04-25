@@ -126,8 +126,7 @@ To be determined. RPi.GPIO works though, with alterations.
 - noVNC, `nuf said. https://github.com/novnc/noVNC
 - Mr. Anderson's answer that didn't get enough credit, <a href='http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none'>here</a>.
 - Setup Samba: https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20(Command-line%20interface/
-- RM-Hull for his pythonic screen repositories: https://github.com/rm-hull/luma.oled
-Linux%20Terminal)%20-%20Uncomplicated,%20Simple%20and%20Brief%20Way!
+- RM-Hull for his pythonic screen repositories: https://github.com/rm-hull
 - This tutorial for enabling/starting g_serial in Armbian: https://oshlab.com/enable-g_serial-usb-otg-console-orange-pi-armbian/
 - This bluetooth tutorial: https://wiki.archlinux.org/index.php/Bluetooth_headset
 - Setup minidlna: https://help.ubuntu.com/community/MiniDLNA
