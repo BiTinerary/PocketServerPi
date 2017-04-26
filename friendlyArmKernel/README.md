@@ -4,7 +4,7 @@ A backup copy of my NanoPi Neo Air setup, running FriendlyArm, that I felt was w
 <img src='https://s18.postimg.org/4r4brjkd5/nano_Pi_OTG2.jpg'>
 <img src="https://s16.postimg.org/yhsbsdlj9/IMG_1838.jpg">
 
-##**Table of Contents**<br>
+## **Table of Contents**<br>
 - [Proof Of Concept and Examples](#proof-of-concept-and-examples)
 - [Build Materials](#build-materials)
 - [Installation](#installation)
@@ -15,6 +15,7 @@ A backup copy of my NanoPi Neo Air setup, running FriendlyArm, that I felt was w
   - [Auto Swap WiFi AP/Client](#auto-swap-wifi-ap-and-client)
   - [Bluetooth](#bluetooth)
   - [GPIO](#gpio)
+- [Credit](#credit)
 
 ## Proof of Concept and Examples
 SSH over HTTP/S using <a href='https://github.com/paradoxxxzero'>Paradoxxxzero</a>'s <a href='https://github.com/paradoxxxzero/butterfly'>Butterfly</a> and a Samba server connection using <a href='https://play.google.com/store/apps/details?id=com.metago.astro&hl=en'>Astro File Manager</a>, running on Android Lollipop v5.0.1<br>
