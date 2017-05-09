@@ -6,7 +6,7 @@
 # Then run these commands afterwards.
 # sudo apt-get install xfonts-base
 # reboot
-
+sudo apt-get install xfonts-base
 #
 #added kill function
 #run as:
