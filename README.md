@@ -65,7 +65,7 @@ Make sure the following lines are in that config.<br>
 `ExecStartPre=-/bin/sh -c "echo 2 > /sys/bus/platform/devices/sunxi_usb_udc/otg_role"`<br>
 `systemctl --no-reload enable serial-getty@ttyGS0.service`<br>
 `echo "ttyGS0" >> /etc/securetty`<br>
-`reboot`<br>
+Then reboot.
 <br>
 If config `file or directory doesn't exist`. Create directory and repeat previous `nano` command to create file.<br>
 `mkdir -p /etc/systemd/system/serial-getty@ttyGS0.service.d`<br>
