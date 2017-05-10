@@ -125,7 +125,7 @@ To be determined. RPi.GPIO works though, with alterations.
 - <a href='https://github.com/MitchRatquest'>MitchRatquest</a> for contribution to auto install noVNC. <a href='https://gist.github.com/MitchRatquest/21805fc7c1534d99344acb627721630b'>Here</a>
 - noVNC, `nuf said. https://github.com/novnc/noVNC
 - Mr. Anderson's answer that didn't get enough credit, <a href='http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none'>here</a>.
-- <a href='https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20%28Command-line%20interface/Linux%20Terminal%29%20-%20Uncomplicated%2C%20Simple%20and%20Brief%20Way%21' Setup Samba</a>
+- <a href='https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20%28Command-line%20interface/Linux%20Terminal%29%20-%20Uncomplicated%2C%20Simple%20and%20Brief%20Way%21'>Setup Samba</a>
 - RM-Hull for his pythonic screen repositories: https://github.com/rm-hull
 - This tutorial for enabling/starting g_serial in Armbian: https://oshlab.com/enable-g_serial-usb-otg-console-orange-pi-armbian/
 - This bluetooth tutorial: https://wiki.archlinux.org/index.php/Bluetooth_headset
