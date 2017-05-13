@@ -102,7 +102,9 @@ I haven't got them working as of yet but I'm pretty sure it's user error on my p
 
 ### GPIO
 I was able to successfully use <a href='https://pypi.python.org/pypi/pyA10Lime'>this</a> pythonic library to initiate and pull up/down pins. Which I then used on a secondary NanoPiNeo Air to get the state of a reed switch. This didn't come without it's debugging though.
-I couldn't import the module at first (using a different library) but I found a <a href='http://stackoverflow.com/questions/40896609/python-compilation-error-cannot-import-name-gpio/43559597'>stack solution</a> that worked just as described. After finding that I was able to create and test <a href='https://gist.github.com/BiTinerary/b9b8447bd4b78fbb019d676b5275802a'>this python script</a>. It successfully initiates pin PA6. Which has a reed switch attached to it. Essentially, if GPIO is pulled low, then reed switch is closed. Do nothing. If pulled high, it's open. Send alert. I'll revisit this section soon and add more detailed instructions with newb in mind. Regarding pin initiation, GPIO addresses, etc... but for now it's a pretty decent start even if you don't have a clue.
+I couldn't import a more popular module at first (using a different library) but I found a <a href='http://stackoverflow.com/questions/40896609/python-compilation-error-cannot-import-name-gpio/43559597'>stack solution</a> that worked just as described.<br>
+<br>
+After finding that I was able to create and test <a href='https://gist.github.com/BiTinerary/b9b8447bd4b78fbb019d676b5275802a'>this python script</a>. It successfully initiates pin 12 (PA6). Which has a reed switch attached to it. Essentially, if GPIO is pulled low, then reed switch is closed. Do nothing. If pulled high, it's open. Send alert. I'll revisit this section soon and add more detailed instructions with the newb in mind. Regarding pin initiation, GPIO addresses, etc... but for now it's a pretty decent start.
 
 ## Use case
 ~ A $30 version of this:<br> https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1<br>
