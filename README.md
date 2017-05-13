@@ -43,9 +43,7 @@ You know the drill. Get your Micro SD Card out. Here's Armbian's link to <a href
 Armbian's default credentials are... User: `root` Pswd: `1234`<br>
 You will immediately be prompted to change password and create a sudoer user.<br>
 <br>
-You can write the contents of the Micro SD card to the onboard eMMC storage by issuing `nand-sata-install`. I prefer to hold off on that though and install (the stuff below) prefered programs, edit configs, etc... and complete the entire Linux setup on the Micro SD Card. <b>Then</b> I will write to the eMMC.<br>
-<br>
-This produces a Micro SD Card and eMMC that both have your ideal, personalized configuration. Keep the SD Card as is, if anything goes wrong after an update or w/e, plop the SD Card back in and overwrite the eMMC.
+You can write the contents of the Micro SD card to the onboard eMMC storage by issuing `nand-sata-install`. I prefer to hold off on that though and install programs, edit configs, etc... and complete the Linux setup on the Micro SD Card. <b>Then</b> I will write to the eMMC. That way all the customizations made on the SD Card don't have to be done a second time on the eMMC side. Also, I suggest backing up the SD card using the Win32 Disk Imager program from before. This way if anything goes wrong, like after installing an update on the eMMC or accidentally editing too many configs on the SD Card when you thought you were booted from eMMC (things I've done) you're completely covered.
 
 ## Tutorials
 
@@ -89,10 +87,10 @@ In a perfect world, you'd run this:<br>
 `git clone https://github.com/rm-hull/luma.examples`<br>
 `python ./luma.examples/examples/sys_info.py --display ssd1306 --interface i2c --i2c-port 0`<br>
 <br>
-However, expect error codes because RM-Hull's repo is aimed at Raspi devices, which includes different libraries by default, than Armbian. That being said, let me save you some yak shaving by showing you <a href='https://gist.github.com/BiTinerary/60a20e7bc5a76320d7e6e3230b79c392'>this gist</a> which briefly details the necessary commands to get the SSD1306 up and running.<br>
+However, expect error codes because RM-Hull's repo is aimed at Raspian devices, which includes different libraries by default than Armbian. That being said, let me save you some yak shaving by showing you <a href='https://gist.github.com/BiTinerary/60a20e7bc5a76320d7e6e3230b79c392'>this gist</a> which briefly details the necessary commands to get the SSD1306 up and running.<br>
 <br>
 Full documentation, installation and example code are available here: <a href='https://luma-oled.readthedocs.io'>https://luma-oled.readthedocs.io</a><br> Note that for the NanoPi NeoAir, you should <b>change</b> `port=1` to `port=0`, as stated in docs.
-<a href='https://github.com/rm-hull'>RM-Hull</a> also provides test scripts for animations, games, system info and more. Those scripts can be downloaded from a repository over <a href='https://github.com/rm-hull/luma.examples'>here</a>. You run them like: `sudo python sys_info.py --display ssd1306 --interface i2c --i2c-port 0`<br>
+<a href='https://github.com/rm-hull'>RM-Hull</a> also provides test scripts for animations, games, system info and more. Those scripts can be downloaded from a repository over <a href='https://github.com/rm-hull/luma.examples'>here</a>. You run them like: `sudo python sys_info.py --display ssd1306 --interface i2c --i2c-port 0`<br> Note that example scripts, **must be run from within** the `/luma.examples` folder. <br>
 
 ### Auto Swap WiFi AP and Client
 This is a ported tutorial from when I was using FriendlyArm's kernel. So at the moment I haven't had the opportunity to flush out APMode swapping, that proved to work seemlessly in the previous version. For now FergusL over on the Armbian forums was kind enough to make some bash scripts to do that.<br>
@@ -103,7 +101,8 @@ I haven't got them working as of yet but I'm pretty sure it's user error on my p
 <a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'>This Gist</a> or the following tutorial that is confirmed to work(ish): https://wiki.archlinux.org/index.php/Bluetooth_headset
 
 ### GPIO
-To be determined. RPi.GPIO works though, with alterations.
+I was able to successfully use <a href='https://pypi.python.org/pypi/pyA10Lime'>this</a> pythonic library to initiate and pull up/down pins. Which I then used on a secondary NanoPiNeo Air to get the state of a reed switch. This didn't come without it's debugging though.
+I couldn't import the module at first (using a different library) but I found a <a href='http://stackoverflow.com/questions/40896609/python-compilation-error-cannot-import-name-gpio/43559597'>stack solution</a> that worked just as described. After finding that I was able to create and test <a href='https://gist.github.com/BiTinerary/b9b8447bd4b78fbb019d676b5275802a'>this python script</a>. It successfully initiates pin PA6. Which has a reed switch attached to it. Essentially, if GPIO is pulled low, then reed switch is closed. Do nothing. If pulled high, it's open. Send alert. I'll revisit this section soon and add more detailed instructions with newb in mind. Regarding pin initiation, GPIO addresses, etc... but for now it's a pretty decent start even if you don't have a clue.
 
 ## Use case
 ~ A $30 version of this:<br> https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1<br>
