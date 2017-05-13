@@ -29,17 +29,18 @@ def sendAlert():
 	alertMessage = "Door Opened: %s" % getTimeStamp
 	print alertMessage
 	sendEmail(alertMessage) #pass "alertMessage" as argument to sendEmail. Which is an imported function from another script...
-	time.sleep(120) # This ^ uses smptlib library to send a message, from my gmail account to the email address of my cell number.
-
+	time.sleep(360) # This ^ uses smptlib library to send a message, from my gmail account to the email address of my cell number.
+	# sleep for 6 minutes. ie: don't send more than one SMS in 6 min span.
+	# e.g. Leave, forgot item. Enter, grab item. Exit != 3 texts.
 	
 initiatePin() #start of script
 while True: #Initiate loop
-	time.sleep(2) 
-	print "Door is: %s" % doorState()[1]
+	time.sleep(2) # check state of pin, every 2 seconds.
+	print "Door is: %s" % doorState()[1] #debug
 	print "Door Value: %s" % doorState()[0]
 	
 	if doorState()[0] == 0:
-		pass
+		pass # if door closed, do nothing.
 	elif doorState()[0] == 1:
-		sendAlert()
-	print "\n"
+		sendAlert() # else, door is open. Send alert.
+	print "\n" # pretty CLI print.
