@@ -106,6 +106,8 @@ I couldn't import a more popular module at first (using a different library) but
 <br>
 After finding that I was able to create and test <a href='https://gist.github.com/BiTinerary/b9b8447bd4b78fbb019d676b5275802a'>this python script</a>. It successfully initiates pin 12 (PA6). Which has a reed switch attached to it. Essentially, if GPIO is pulled low, then reed switch is closed. Do nothing. If pulled high, it's open. Send alert. I'll revisit this section soon and add more detailed instructions with the newb in mind. Regarding pin initiation, GPIO addresses, etc... but for now it's a pretty decent start.
 
+For pin numbers and ports: http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO_Air
+
 ## Use case
 ~ A $30 version of this:<br> https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1<br>
 ~ <a href='https://github.com/BiTinerary/PocketServerPi/blob/master/friendlyArmKernel/miscScripts/blinkPerOrder.py'>blinkPerOrder.py</a> uses eBay API to get current orders that haven't been shipped, then blinks onboard LED that many times.
