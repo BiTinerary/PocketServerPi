@@ -1,5 +1,5 @@
 # PocketServerPi
-A custom NanoPi Neo Air setup, running Armbian 5.25, that I felt was worth documenting. More or less, the setup produces a portable proftpd, SSH, bluetooth media, minidlna, Access Point **and** samba server, etc.. rolled into one, for ~$30.
+A custom NanoPi Neo Air setup, running Armbian 5.25, that I felt was worth documenting. Effectively, the setup can produce a portable proftpd, SSH, bluetooth, minidlna, Access Point **and** samba server, etc.. rolled into one, for ~$30.
 
 <img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/androidOTGToNeoAir.jpg'>
 <img src="https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/portableNeoAir.jpg">
