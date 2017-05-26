@@ -114,7 +114,7 @@ For pin numbers and ports: http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO
 ## Use cases and ideas
 - A $30 version of this:  
 https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1  
-- [blinkPerOrder.py](https://github.com/BiTinerary/PocketServerPi/blob/master/friendlyArmKernel/miscScripts/blinkPerOrder.py) uses eBay API to get current orders that haven't been shipped, then blinks onboard LED that many times.
+- Minimalist Alerts: [blinkPerOrder.py](https://github.com/BiTinerary/PocketServerPi/blob/master/friendlyArmKernel/miscScripts/blinkPerOrder.py) uses eBay API to get current orders that haven't been shipped, then blinks onboard LED that many times.
 - Consistant, Portable access to a Linux box or python terminal.  
 - Linux box that can be used as a disposable scratchpad.  
 - Painless and local (much safer) Samba Share for file sharing between work **and** home without ever touching a button  
