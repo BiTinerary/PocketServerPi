@@ -123,12 +123,6 @@ https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B0
 - Captive portals and automated node/client pentesting.  
 - [p2pADB](https://github.com/kosborn/p2p-adb) `if` new device connected via OTG? `then` run exploit. Save to microSD. `else` wait.
 
-## TODO
-- Wifi Mode automation and swap from Client to AP has proved to work reliably. Python scripts (switchAPMode/blinkPerOrder) should be moved, to /etc/network/if-down.d and if-up.d respectively.
-  - Python scripts should **not** have .py extension but `#!/bin/python` on line 0, also the crontab/Launch on startup can be destroyed.
-- Create a basic, generalized image (personal passwords/credz removed) so that USB to UART adapter is not needed for setup and can be accessed directly via SSH, Butterfly, Putty etc...
-- Boot as HID device, extending the "swiss army knife" capabilities to Rubber Ducky territory.
-
 ## Credit
 - [MitchRatquest](https://github.com/MitchRatquest) for contribution to auto install noVNC. [Here](https://gist.github.com/MitchRatquest/21805fc7c1534d99344acb627721630b)
 - noVNC, `nuf said. https://github.com/novnc/noVNC
@@ -139,3 +133,9 @@ https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B0
 - This bluetooth tutorial: https://wiki.archlinux.org/index.php/Bluetooth_headset
 - Setup minidlna: https://help.ubuntu.com/community/MiniDLNA
 - Setup proftpd: https://www.liquidweb.com/kb/how-to-install-and-configure-proftpd-on-ubuntu-14-04-lts/
+
+## TODO
+- Wifi Mode automation and swap from Client to AP has proved to work reliably. Python scripts (switchAPMode/blinkPerOrder) should be moved, to /etc/network/if-down.d and if-up.d respectively.
+  - Python scripts should **not** have .py extension but `#!/bin/python` on line 0, also the crontab/Launch on startup can be destroyed.
+- Create a basic, generalized image (personal passwords/credz removed) so that USB to UART adapter is not needed for setup and can be accessed directly via SSH, Butterfly, Putty etc...
+- Boot as HID device, extending the "swiss army knife" capabilities to Rubber Ducky territory.
