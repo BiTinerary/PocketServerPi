@@ -119,7 +119,7 @@ https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B0
 - Linux box that can be used as a disposable scratchpad, like in a development setting. [Alpine](https://alpinelinux.org/downloads/) or [Docker](https://store.docker.com/editions/community/docker-ce-server-debian)?
 - Painless and local (much safer) Samba Share for file sharing between work **and** home without ever touching a button  
 - Minidlna server for Consoles, Medial Players, etc...  
-- `if static ip present; do wakeonlan` ie: wireless, buttonless, IOT trigger.  
+- IOT triggering: https://github.com/BiTinerary/PersonalAPI or `if` connected to SSID, wakeonlan, run music on startup.
 - Captive portals and automated node/client pentesting.  
 - [p2pADB](https://github.com/kosborn/p2p-adb) `if` new device connected via OTG? `then` run exploit. Save to microSD. `else` wait.
 
