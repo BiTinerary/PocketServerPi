@@ -74,7 +74,7 @@ You might need a Gadget Serial v2.4 driver if running on Windows. I've included 
 ### SSH in Web Browser with noVNC
 Run the `noVNCAutoInstallation.sh` bash script included in this repo. Here I am running `htop` and `wavemon` with a `screen` session. Add `@reboot bash /home/stuxnet/samba/noVNC/vnc.sh` to `crontab -e` to run noVNC on startup and ditch PuTTY/serial completely.
 <br>
-<p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/noVNConScreen.png'></p>
+<p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/noVNConScreen.png'></p>  
 Credits for the script to [MitchRatquest](https://github.com/MitchRatquest) and to [noVNC](https://github.com/novnc/noVNC) for their utility.
 
 ### i2c Screen SSD1306
