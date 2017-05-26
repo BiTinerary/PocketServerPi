@@ -16,6 +16,7 @@ A custom NanoPi Neo Air setup, running Armbian 5.25, that I felt was worth docum
   - [Auto Swap WiFi AP/Client](#auto-swap-wifi-ap-and-client)
   - [Bluetooth](#bluetooth)
   - [GPIO](#gpio)
+- [Use Cases and Ideas](#use-cases-and-ideas)
 - [Credit and Sources](#credit)
 
 ## Proof of Concept, Examples and Specs
@@ -73,8 +74,8 @@ You might need a Gadget Serial v2.4 driver if running on Windows. I've included 
 
 ### SSH in Web Browser with noVNC
 Run the `noVNCAutoInstallation.sh` bash script included in this repo. Here I am running `htop` and `wavemon` with a `screen` session. Add `@reboot bash /home/stuxnet/samba/noVNC/vnc.sh` to `crontab -e` to run noVNC on startup and ditch PuTTY/serial completely.
-<br>
-<p align="center"><img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/noVNConScreen.png'></p>  
+  
+<img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/noVNConScreen.png'>  
 Credits for the script to [MitchRatquest](https://github.com/MitchRatquest) and to [noVNC](https://github.com/novnc/noVNC) for their utility.
 
 ### i2c Screen SSD1306
@@ -110,17 +111,17 @@ After finding that I was able to create and test [reedSwitchState.py](https://gi
 
 For pin numbers and ports: http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO_Air
 
-## Use case
-~ A $30 version of this:  
+## Use cases and ideas
+- A $30 version of this:  
 https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1  
-~ [blinkPerOrder.py](https://github.com/BiTinerary/PocketServerPi/blob/master/friendlyArmKernel/miscScripts/blinkPerOrder.py) uses eBay API to get current orders that haven't been shipped, then blinks onboard LED that many times.
-~ Consistant, Portable access to a Linux box or python terminal.  
-~ Linux box that can be used as a disposable scratchpad.  
-~ Painless and local (much safer) Samba Share for file sharing between work **and** home without ever touching a button<br>
-~ Minidlna server for Consoles, Medial Players, etc...  
-~ `if static ip present; do wakeonlan` ie: wireless, buttonless, IOT trigger.  
-~ Captive portals and automated node/client pentesting.  
-~ [p2pADB](https://github.com/kosborn/p2p-adb) `if` new device connected via OTG? `then` run exploit. Save to microSD. `else` wait.
+- [blinkPerOrder.py](https://github.com/BiTinerary/PocketServerPi/blob/master/friendlyArmKernel/miscScripts/blinkPerOrder.py) uses eBay API to get current orders that haven't been shipped, then blinks onboard LED that many times.
+- Consistant, Portable access to a Linux box or python terminal.  
+- Linux box that can be used as a disposable scratchpad.  
+- Painless and local (much safer) Samba Share for file sharing between work **and** home without ever touching a button  
+- Minidlna server for Consoles, Medial Players, etc...  
+- `if static ip present; do wakeonlan` ie: wireless, buttonless, IOT trigger.  
+- Captive portals and automated node/client pentesting.  
+- [p2pADB](https://github.com/kosborn/p2p-adb) `if` new device connected via OTG? `then` run exploit. Save to microSD. `else` wait.
 
 ## TODO
 - Wifi Mode automation and swap from Client to AP has proved to work reliably. Python scripts (switchAPMode/blinkPerOrder) should be moved, to /etc/network/if-down.d and if-up.d respectively.
