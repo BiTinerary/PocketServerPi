@@ -101,7 +101,7 @@ I haven't got them working as of yet but I'm pretty sure it's user error on my p
 <a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'>This Gist</a> or the following tutorial that is confirmed to work(ish): https://wiki.archlinux.org/index.php/Bluetooth_headset
 
 ### GPIO
-I was able to successfully use <a href='https://pypi.python.org/pypi/pyA10Lime'>this</a> pythonic library to initiate and pull up/down pins. Which I then used on a secondary NanoPiNeo Air to get the state of a reed switch. This didn't come without it's debugging though.
+I was able to successfully use [this GPIO library](https://pypi.python.org/pypi/pyA10Lime) to initiate and pull up/down pins. Which I then used on a secondary NanoPiNeo Air to get the state of a reed switch. This didn't come without it's debugging though.
 I couldn't import a more popular module at first (using a different library) but I found a <a href='http://stackoverflow.com/questions/40896609/python-compilation-error-cannot-import-name-gpio/43559597'>stack solution</a> that worked just as described.<br>
 <br>
 After finding that I was able to create and test <a href='https://github.com/BiTinerary/PocketServerPi/blob/master/reedSwitchState.py'>reedSwitchState.py</a>. It successfully initiates pin 12 (PA6). Which has a reed switch attached to it. Essentially, if GPIO is pulled low, then reed switch is closed. Do nothing. If pulled high, it's open. Send alert. I'll revisit this section soon and add more detailed instructions with the newb in mind. Regarding pin initiation, GPIO addresses, etc... but for now it's a pretty decent start.
