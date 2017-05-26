@@ -45,7 +45,12 @@ You know the drill. Get your Micro SD Card out. Here's Armbian's link to [downlo
 Armbian's default credentials are... User: `root` Pswd: `1234`  
 You will immediately be prompted to change password and create a sudoer user.  
   
-You can write the contents of the Micro SD card to the onboard eMMC storage by issuing `nand-sata-install`. I prefer to hold off on that though and install programs, edit configs, etc... and complete the Linux setup on the Micro SD Card. **Then** I will write to the eMMC. That way all the customizations made on the SD Card don't have to be done a second time on the eMMC side. Also, I suggest backing up the SD card using the Win32 Disk Imager program from before. This way if anything goes wrong, like after installing an update on the eMMC or accidentally editing too many configs on the SD Card when you thought you were booted from eMMC (things I've done) you're completely covered.
+You can write the contents of the Micro SD card to the onboard eMMC storage by issuing `nand-sata-install`.  
+I prefer to hold off on that though and install programs, edit configs, etc... and complete the Linux setup on the Micro SD Card. **Then** I will write to the eMMC. That way all the customizations made on the SD Card don't have to be done a second time on the eMMC side.  
+  
+Also, I suggest backing up the SD card using the Win32 Disk Imager program from before. This way if anything goes wrong, like after installing an update on the eMMC or accidentally editing too many configs on the SD Card when you thought you were booted from eMMC (things I've done) you're completely covered.  
+  
+**Tip**: I've noticed that when I `reboot` while having a simultaneous installation on the Micro SD Card **and** eMMC, there's no rhyme or reason as to which one takes precedence on boot. It should be the SD Card, but I've accidentally ruined an installation thinking it was booted to one and not the other.
 
 ## Tutorials
 
