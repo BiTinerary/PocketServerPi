@@ -101,22 +101,23 @@ I haven't got them working as of yet but I'm pretty sure it's user error on my p
 <a href='https://gist.github.com/BiTinerary/f7129a98823d5a130607fc9a26d2d4c0'>This Gist</a> or the following tutorial that is confirmed to work(ish): https://wiki.archlinux.org/index.php/Bluetooth_headset
 
 ### GPIO
-I was able to successfully use [this GPIO library](https://pypi.python.org/pypi/pyA10Lime) to initiate and pull up/down pins. Which I then used on a secondary NanoPiNeo Air to get the state of a reed switch. This didn't come without it's debugging though. I'll spare you the details but this [stack solution](http://stackoverflow.com/questions/40896609/python-compilation-error-cannot-import-name-gpio/43559597)  
+I was able to successfully use [this GPIO library](https://pypi.python.org/pypi/pyA10Lime) to initiate and pull up/down pins. Which I then used on a secondary NanoPiNeo Air to get the state of a reed switch. This didn't come without it's debugging though. I'll spare you the details but this [stack solution](http://stackoverflow.com/questions/40896609/python-compilation-error-cannot-import-name-gpio/43559597) is how I came across that GPIO library, while trying (and failing) to use a similar one meant for another board.
   
-After finding that I was able to create and test <a href='https://github.com/BiTinerary/PocketServerPi/blob/master/reedSwitchState.py'>reedSwitchState.py</a>. It successfully initiates pin 12 (PA6). Which has a reed switch attached to it. Essentially, if GPIO is pulled low, then reed switch is closed. Do nothing. If pulled high, it's open. Send alert. I'll revisit this section soon and add more detailed instructions with the newb in mind. Regarding pin initiation, GPIO addresses, etc... but for now it's a pretty decent start.
+After finding that I was able to create and test [reedSwitchState.py](https://github.com/BiTinerary/PocketServerPi/blob/master/reedSwitchState.py). It successfully initiates pin 12 (PA6). Which has a reed switch attached to it. Essentially, if GPIO is pulled low, then reed switch is closed. Do nothing. If pulled high, it's open. Send alert. I'll revisit this section soon and add more detailed instructions with the newb in mind. Regarding pin initiation, GPIO addresses, etc... but for now it's a pretty decent start.
 
 For pin numbers and ports: http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO_Air
 
 ## Use case
-~ A $30 version of this:<br> https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1<br>
-~ <a href='https://github.com/BiTinerary/PocketServerPi/blob/master/friendlyArmKernel/miscScripts/blinkPerOrder.py'>blinkPerOrder.py</a> uses eBay API to get current orders that haven't been shipped, then blinks onboard LED that many times.
+~ A $30 version of this:  
+https://www.amazon.com/SanDisk-Wireless-Smartphones-Tablets-SDWS1-032G-A57/dp/B00DR8LAE2?th=1  
+~ [blinkPerOrder.py](https://github.com/BiTinerary/PocketServerPi/blob/master/friendlyArmKernel/miscScripts/blinkPerOrder.py) uses eBay API to get current orders that haven't been shipped, then blinks onboard LED that many times.
 ~ Consistant, Portable access to a Linux box or python terminal.<br>
 ~ Linux box that can be used as a disposable scratchpad.<br>
 ~ Painless and local (much safer) Samba Share for file sharing between work **and** home without ever touching a button<br>
 ~ Minidlna server for Consoles, Medial Players, etc...<br>
 ~ `if static ip present; do wakeonlan` ie: wireless, buttonless, IOT trigger.<br>
 ~ Captive portals and automated node/client pentesting.<br>
-~ <a href='https://github.com/kosborn/p2p-adb'>p2pADB</a> `if` new device connected via OTG? `then` run exploit. Save to microSD. `else` wait.
+~ [p2pADB](https://github.com/kosborn/p2p-adb) `if` new device connected via OTG? `then` run exploit. Save to microSD. `else` wait.
 
 ## TODO
 * Wifi Mode automation and swap from Client to AP has proved to work reliably. Python scripts (switchAPMode/blinkPerOrder) should be moved, to /etc/network/if-down.d and if-up.d respectively.
@@ -125,10 +126,10 @@ For pin numbers and ports: http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO
 * Boot as HID device, extending the "swiss army knife" capabilities to Rubber Ducky territory.
 
 ## Credit
-- <a href='https://github.com/MitchRatquest'>MitchRatquest</a> for contribution to auto install noVNC. <a href='https://gist.github.com/MitchRatquest/21805fc7c1534d99344acb627721630b'>Here</a>
+- [MitchRatquest](https://github.com/MitchRatquest) for contribution to auto install noVNC. [Here](https://gist.github.com/MitchRatquest/21805fc7c1534d99344acb627721630b)
 - noVNC, `nuf said. https://github.com/novnc/noVNC
-- Mr. Anderson's answer that didn't get enough credit, <a href='http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none'>here</a>.
-- <a href='https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20%28Command-line%20interface/Linux%20Terminal%29%20-%20Uncomplicated%2C%20Simple%20and%20Brief%20Way%21'>Setup Samba</a>
+- Mr. Anderson's answer that didn't get enough credit, [here](http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none).
+- [Setup Samba](https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20%28Command-line%20interface/Linux%20Terminal%29%20-%20Uncomplicated%2C%20Simple%20and%20Brief%20Way%21)
 - RM-Hull for his pythonic screen repositories: https://github.com/rm-hull
 - This tutorial for enabling/starting g_serial in Armbian: https://oshlab.com/enable-g_serial-usb-otg-console-orange-pi-armbian/
 - This bluetooth tutorial: https://wiki.archlinux.org/index.php/Bluetooth_headset
