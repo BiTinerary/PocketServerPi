@@ -50,7 +50,7 @@ I prefer to hold off on that though and install programs, edit configs, etc... a
   
 Also, I suggest backing up the SD card using the Win32 Disk Imager program from before. This way if anything goes wrong, like after installing an update on the eMMC or accidentally editing too many configs on the SD Card when you thought you were booted from eMMC (things I've done) you're completely covered.  
   
-**Tip**: I've noticed that when I `reboot` while having a simultaneous installation on the Micro SD Card **and** eMMC, there's no rhyme or reason as to which one takes precedence on boot. It should be the SD Card, but I've accidentally ruined an installation thinking it was booted to one and not the other.
+**Tip**: `reboot`ing with a simultaneous installation on the Micro SD Card **and** eMMC might change the precedence of which one is booted. It should be the SD Card but there doesn't seem to be any particular rhyme or reason to it.
 
 ## Tutorials
 
