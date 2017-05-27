@@ -78,10 +78,9 @@ If config `file or directory doesn't exist`. Create directory and repeat previou
 You might need a Gadget Serial v2.4 driver if running on Windows. I've included a [.inf file](https://github.com/BiTinerary/PocketServerPi/blob/master/gistScripts/linux-cdc-acm.inf), provided by [this](https://bbs.nextthing.co/t/need-gadget-serial-v2-4-driver-for-windows-7/2044) forum. Just download, run Device Manager (`devmgmt.msc`), right click missing COM Driver, manually select downloaded .inf file.
 
 ### SSH in Web Browser with noVNC
-Run the `noVNCAutoInstallation.sh` bash script included in this repo. Here I am running `htop` and `wavemon` with a `screen` session. Add `@reboot bash /home/stuxnet/samba/noVNC/vnc.sh` to `crontab -e` to run noVNC on startup and ditch PuTTY/serial completely.
+Run the `noVNCAutoInstallation.sh` bash script included in this repo. Here I am running `htop` and `wavemon` with a `screen` session. Add `@reboot bash /home/stuxnet/samba/noVNC/vnc.sh` to `crontab -e` to run noVNC on startup and ditch PuTTY/serial completely. Credits for the auto install script to [MitchRatquest](https://github.com/MitchRatquest) and to [noVNC](https://github.com/novnc/noVNC) for their utility.
   
-<img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/noVNConScreen.png'>  
-Credits for the script to [MitchRatquest](https://github.com/MitchRatquest) and to [noVNC](https://github.com/novnc/noVNC) for their utility.
+<img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/noVNConScreen.png'>
 
 ### i2c Screen SSD1306
 <img src='https://github.com/BiTinerary/PocketServerPi/blob/master/GitPics/ssd1306NeoAir.jpg'>  
