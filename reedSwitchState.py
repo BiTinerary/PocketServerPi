@@ -36,8 +36,8 @@ def sendAlert():
 initiatePin() #start of script
 while True: #Initiate loop
 	time.sleep(2) # check state of pin, every 2 seconds.
-	print "Door is: %s" % doorState()[1] #debug
 	print "Door Value: %s" % doorState()[0]
+	print "Door is: %s" % doorState()[1] #debug
 	
 	if doorState()[0] == 0:
 		pass # if door closed, do nothing.
